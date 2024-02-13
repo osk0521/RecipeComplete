@@ -1,0 +1,250 @@
+@charset "UTF-8";
+		
+/* 여기에 작성 */
+		.main_cont_wrap{
+			min-height: 560px;
+			position: relative;
+		}
+		#div_mypage {
+			padding: 45px 0 0 0;
+			position:relative;
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+		}
+		#div_mypage_right {
+			width: 960px;
+			padding: 0 0 0 40px;
+			min-height: 500px;
+		}
+		#div_mypage_main {
+			padding: 0 0 50px 0;
+		}
+		.div_mypage_title{
+			display: flex;
+    		justify-content: space-between;
+   			align-items: end;
+		}
+		.div_mypage_order_reserver_checkbox{
+		 margin: 0 0 35px 0;
+    	padding: 20px 20px 20px 30px;
+   		 border: 3px solid #eeeeee;
+		}
+		.div_mypage_order_reserver_checkbox{
+			display: flex;
+		}
+		.div_mypage_order_reserver_checkbox_list>span{
+			color: #777777;
+    		font-size: 13px;
+    		margin: 0;
+		}
+		.div_mypage_order_reserver_checkbox_list>button{
+			width: 54px;
+    		height: 31px;
+    		color: #777777;
+    		font-size: 12px;
+    		border: 1px solid #d6d6d6;
+    		background: #fff;
+		}
+		.calender_submit>button{
+			display: flex;
+    		justify-content: space-evenly;
+   		 	padding-top: 5px;
+		}
+		.calender_submit_img{
+			margin-top:3px;
+		}
+		.calender_submit_img>svg{
+			fill: white;
+		}
+		.div_mypage_order_reserver_calender{
+			display: flex;
+			margin-left: 15px;
+		}
+		.calender_inputbox_from{
+			margin-right: 5px;
+		}
+		.calender_inputbox_to{
+			margin-left: 5px;
+		}
+		.calender_submit{
+			display: flex;
+			margin-left: 5px;	
+		}
+		.calender_inputbox_from,.calender_inputbox_to{
+			padding-right: 8px;		
+		}
+		.calender_inputbox_from>input, .calender_inputbox_to>input{
+			border: none;
+			outline: none;
+			width:100px;
+		}
+		.calender_inputbox_from>svg,.calender_inputbox_to>svg{
+			margin-top:7px;
+		}
+		.calender_inputbox_from,.calender_inputbox_to{
+			height: 33px;
+			border: 1px solid #d6d6d6;
+			border-radius: 4px;
+		}
+		.calender_submit{
+			height: 33px;
+    		color: #ffffff;
+    		font-weight: bold;
+    		border: 1px solid #46AE4F;
+   			background: #46AE4F;
+		}
+		.calender_submit>button{
+			border: none;
+			background: none;
+			width: 120px;
+			color: white;
+		}
+		.orderlistchild_grid_wrap_2row{
+			display: grid;
+			margin:auto;
+			width:921px;
+			grid-template-columns: 160px 800px;
+			grid-template-rows: 50px 50px;
+			border: 2px solid #dbdbdb;
+    		padding: 20px 40px;
+		}
+		.orderlistchild_grid_main1{
+			
+		}
+		.orderlistchild_grid_main2{
+			display: flex;
+		}
+		.orderlistchild_grid_main2>ul{
+			margin-right: 8px;
+		}
+		.orderlistchild_grid_main2>ul>li>button{
+			    width: 54px;
+    			height: 31px;
+    			margin: 0 0 0 -1px;
+    			color: #777777;
+    			font-size: 12px;
+    			background: white;
+    			border: 1px solid #d6d6d6;
+		}
+		.orderlistchild_grid_main2>select , .orderlistchild_grid_main2>input{
+			height: 33px;
+			border: 1px solid #d6d6d6;
+			border-radius: 4px;
+		}
+		.orderlist_search{
+			text-align: center;
+			margin: 15px 0px;
+		}
+		.orderlist_search>button{
+			height: 31px;
+    		color: #ffffff;
+   	 		font-weight: bold;
+    		border: 1px solid #46AE4F;
+    		background: #46AE4F;
+    		width: 90px;
+		}
+		.div_mypage_title {
+			padding-bottom: 5px;
+		}
+		.div_mypage_title > h3 {
+			display: inline-block;
+			font-size: 22px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-weight: 500;
+		}
+		#div_mypage_order_case {
+			display: inline-block;
+			width: 19%;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#div_mypage_order_case > ul {
+			display: inline-block;
+			width: 70%;
+		}
+		#div_mypage_order_case > ul > li {
+			padding: 8px 5px 10px 5px;
+			font-size: 12px;
+			border-top: 1px dotted #bfbfbf;
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+		}
+		#div_mypage_order_case > ul > li:first-child {
+			border-top: none;
+		}
+		#div_mypage_order_case > ul > li > b {
+			font-weight: 500;
+		}
+		#div_mypage_recent_order{
+			 overflow-x: hidden;
+    		 overflow-y: auto;
+		}
+		#div_mypage_recent_order > .div_mypage_title {
+			display: flex;
+			justify-content: space-between;
+		} 
+		#div_mypage_recent_order > .div_mypage_title > a {
+			font-size: 12px;
+			padding-top: 30px;
+		}
+		#table_recent_order {
+			width: 100%;
+			border: 0;
+			border-spacing: 0;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		#table_recent_order > thead > tr > th {
+			padding: 9px 10px 10px 10px;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #dbdbdb;
+			background: #f7f7f7;
+			font-size: 14px;
+			font-weight: 500;
+			text-align: left;
+			color: #333;
+			line-height: 1.5;
+		}
+		#table_recent_order > tbody > tr > td {
+			border-bottom: 1px solid #dbdbdb;
+			height: 31px;
+			padding: 15px 10px 14px 10px;
+			color: #777;
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: center;
+		}		
+		.good_opt{
+			display: flex;
+			height: 72px;
+		}
+		.good_opt>figure{
+			width: 40px;
+			height: 40px;
+		}
+		.good_opt>figure>img{
+			width: 100%;
+			height: 100%;
+		}
+		.good_opt_cont>p{
+			font-size: 9px;
+		}
+		.btn_box{
+			text-align: center;
+    		margin-top: 30px;
+		}
+		.cancel{
+			border: 1px solid #cccccc;
+			height: 42px;
+			width: 100px;
+		}
+		.confirm{
+			border: 1px solid #46AE4F;
+    		background: #46AE4F;
+    		height: 42px;
+    		width: 100px;
+    		color: white;
+		}

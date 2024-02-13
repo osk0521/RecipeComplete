@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+		.advertisement {
+			margin: 10px;
+		}
+		.advertisement a img {
+			 width: 100%;
+			 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		}
+		#div_store_best {
+			padding: 12px 14px 0;
+		}
+		#div_store_best > #div_store_title {
+			text-align: left;
+			padding: 12px 5px;
+			border-bottom: 1px solid #e6e6e6;
+		}
+		#div_store_best > #div_store_title > b {
+			font-size: 18px;
+			color: #000;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > b > span {
+			font-size: 18px;
+			color: #74b243;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > a {
+			display: inline-block;
+			float: right;
+			font-size: 13px;
+			color: #999;
+			margin-top: 4px;
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product {
+			margin: 15px 0 0 0;
+		}
+		#div_store_best > #div_store_body > .div_product a {
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product a .div_product_img {
+			width: 305px;
+			border: 1px solid #ddd;
+		}
+		#div_store_best > #div_store_body > .div_product .div_product_text {
+			padding: 8px 2px 2px;
+			margin-bottom: 18px;
+		}
+		.product_title {
+			font-size: 16px;
+			color: #000;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 1.4;
+			margin-bottom: 8px;
+			
+		}
+		.product_price {
+			font-size: 20px;
+			color: #000;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			line-height: 1;
+			margin-bottom: 0;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.product_price > small {
+			font-weight: normal;
+			color: #000;
+			fot-size: 16px;
+			margin-left: 1px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.product_star {
+			padding-top: 8px;
+		}
+		.product_star img {
+			width: 13px;
+			margin: -1px 1px 0 0
+		}
+		.product_star span {
+			color: #999;
+			font-size: 11px;
+			padding-left: 3px;
+			vertical-align: middle;
+			font-weight: 300;
+		}
+		#div_store_more {
+			border-top: 1px solid #e6e6e6;
+			margon-top: -10px;
+		}
+		#div_store_more > #store_more_button {
+			display: inline-block;
+			width: 100%;
+			padding: 10px 0;
+			text-align: center;
+			color: #999;
+			border: none;
+			background: #fff;
+			font-weight: normal;
+			font-size: 14px;
+			font-family: 'Noto Sans KR', sans-serif!important;
+		}

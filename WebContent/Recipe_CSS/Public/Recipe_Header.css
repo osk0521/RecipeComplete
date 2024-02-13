@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		body {
+			min-width: 1240px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #333;
+			background: #f1f1f2;
+		}
+		a {
+			color: #333;
+			text-decoration: none;
+			cursor: pointer;
+			outline: none;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		a:focus {
+			text-decoration: none;
+			outline: none;
+			color: inherit;
+		}
+		img {
+			vertical-align: middle;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		.border {
+			border: 1px solid red;
+		}
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		li {
+			list-style: none;
+		}
+		#div_header {
+			position: relative;
+			background: #fff;
+			width: 100%;
+			height: 112px;
+		}
+		#div_header > div:nth-child(1) {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 16px 0 0 176px;
+		}
+		#div_header > div:nth-child(1) > div {
+			display: inline-block;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(1) {
+			margin: 0 30px 0 0;
+			vertical-align: top;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(2) {
+			width: 450px;
+			padding-top: 12px;			
+		}
+		#div_header > div:nth-child(2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1000px;
+		}
+		#div_header > div:nth-child(3) {
+			position: absolute;
+			top: 0;
+			left: 110px;
+			z-index: 1000px;
+		}
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+		    font-family: 'Glyphicons Halflings';
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 1;
+		}
+		#div_input_group {
+			position: relative;
+			display: table;
+			border-collaspe: separate;
+		}
+		#div_input_group > input {
+			border: 1px solid #ccc;
+			background: #fbfbfb;
+			height: 38px;
+			display: table-cell;
+			position: relative;
+			z-index: 2;
+			float: left;
+			width: 100%;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #555;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#div_input_group span {
+			position: relative;
+			white-space: nowrap;
+			width: 1%;
+			color: #fff;
+			font-size: 22px;
+			vertical-align: middle;
+			display: table-cell;
+		}
+		#div_input_group > span > button {
+			border-radius: 4px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			background: #74b243;
+			border: 1px solid #68a13a;
+			height: 38px;
+			margin: 0 0 2px -2px;
+			position: relative;
+			cursor: pointer;
+			margin-left: -1px;
+			padding: 6px 20px;
+			display: inline-block;
+		}
+		.glyphicon-search:before {
+			content: "\e003";
+		}
+		#div_header_button {
+			display: inline-block;
+			padding: 16px 0 0 50px;
+			vertical-align: top;
+			position: relative;
+			margin: 0 0 10px;
+		}
+		#div_header_button > div {
+			padding: 0 3px;
+		}
+		#div_header_button > #div_login_button {
+			position: relative;
+		}
+		#div_user_mybutton {
+			display: none;
+			position: absolute;
+			top: 51px;
+			left: -65px;
+			z-index: 1000;
+			width: 182px;
+		}
+		#p_layer_top {
+			margin: 0;
+			padding: 0;
+			background: url(https://recipe1.ezmember.co.kr/img/bg_layer3_t.png) left top no-repeat;
+			height: 11px;
+		}
+		#p_layer_middle {
+			margin: 0;
+			padding: 0;
+			background: url(https://recipe1.ezmember.co.kr/img/bg_layer3_bg.png) left top repeat-y;
+		}
+		#p_layer_middle > a {
+			display: block;
+			height: auto;
+			border-bottom: 1px solid #ebebeb;
+			padding: 12px 0;
+			text-align: center;
+			margin: 0 12px;
+			font-size: 15px;
+			font-weight: 500;
+		}
+		#p_layer_bottom {
+			margin: 0;
+			padding: 0;
+			background: url(https://recipe1.ezmember.co.kr/img/bg_layer3_b.png) left top no-repeat;
+			height: 12px;
+		}
+		#div_header_button > div:nth-child(1) > a > img {
+			display: inline-block;
+			width: 44px;
+			border-radius: 50%;
+		}
+		#div_header_button > div:nth-child(3) {
+			margin-left: 50px;
+		}
+		#div_menubar {
+			background: url("https://recipe1.ezmember.co.kr/img/gnb_bg.gif") left top repeat-x;
+			height: 46px;
+			width: 100%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			margin-bottom: 16px;
+		}
+		#div_menu_content {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 9px 30px 0;
+			text-align: center;
+		}
+		.div_menu_button {
+			float: left;
+			padding: 0;
+			width: 196px;
+			height: 25px;
+		}
+		.div_menu_button a {
+			display: block;
+			font-size: 18px;
+			font-weight: 600px;
+			margin: 0 8px;
+			color: #fff;
+			text-decoration: none;
+		}
+		.div_menu_button a:hover {
+			color: #ffff00;
+		}
+		.div_menu_button a span.glyphicon {
+			font-size: 14px;
+			margin: -2px 0 0 0px;
+		}
+		.glyphicon-menu-down::before {
+			content: "\e259";
+		}

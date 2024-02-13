@@ -1,0 +1,179 @@
+    .container {
+	    width: 1240px;
+	      margin-left: auto;
+	      margin-right: auto;
+	      margin-bottom: 0px;
+	      padding: 0;
+    }
+	
+    #contents_area_full {
+      border: 1px solid #e6e7e8;
+      padding: 0 0 20px 0;
+      background: #fff;
+      position: relative;
+      width: 1239.2px;
+    }
+
+    .magazine_list {
+      border: 1px solid #ebebeb;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      float: left;
+      width: 100%;
+      margin-bottom: 22px;
+    }
+
+    .magazine_list li {
+      width: 25%;
+      border-right: 1px solid #ebebeb;
+      height: 72px;
+      border-bottom: 1px solid #ebebeb;
+      float: left;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .magazine_list li a {
+      padding-left: 23px;
+      padding-top: 10px;
+      font-size: 16px;
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+    }
+
+    .magazine_list li img {
+      width: 50px;
+      height: 50px;
+      margin-right: 19px;
+    }
+
+    .div_recent_magazine {
+      font-size: 18px;
+      padding: 34px 0 20px 4px;
+      font-weight: bold;
+      clear: both;
+    }
+
+    .magazine_list li.magazine_empty:hover {
+      background: #fff;
+    }
+
+    a.thumbnail {
+      display: inline-block;
+      padding-bottom: 10px;
+      height:230px;
+    }
+    .theme_list st2{
+       clear: both;
+    }
+    .theme_list .thumbnail {
+      width: 224px;
+      border-radius: 0;
+      padding: 0 0 15px 0;
+      margin: 0 14px 20px 0;
+      background: #fbfbfb;
+      border: 1px solid #ddd;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+    }
+    .thumbnail.recipe_introduction {
+    	padding : 15px 9px 9px; 
+    	font-size: 15px;
+     }
+   
+    span.caption name{
+    	font-size : 14px;
+    	line-height: 20px;
+    	display: block;
+    	padding-top : 3px;
+    	color: #999;
+    }
+     span.caption.title{
+     	font-size : 15px;
+    	line-height: 21.42px;
+    	overflow: hidden;
+    	display: -webkit-box;
+    	-webkit-line-clamp: 2;
+    	-webkit-box-orient: vertical;
+    	color: rgb(51, 51, 51);
+    	height: 52.844px;
+    	width:204px;
+     }
+     .tag_tit{
+		font-size: 20px;
+		border-bottom: 1px solid #e6e7e8;
+		padding: 30px 0 10px 8px;
+		line-height: 1;
+     }
+     .s_category_tag{
+		padding: 0 24px;
+		margin-bottom: -10px;
+		position: relative;
+     }
+	.magazine_cont{
+		padding: 30px 21px 30px;
+	}
+	.m_content{
+		width: 224px;
+		border-radius: 0;
+		padding: 0 0 10px 0;
+		margin: 0 14px 20px 0;
+		background: #fbfbfb;
+		border: 1px solid #ddd;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+	}
+	.caption{
+		font-size: 15px;
+     	padding: 9px;
+     	color: #333;
+	}
+     .pad_t_15{
+		padding-top:15px !important;
+     }
+     .caption_tit{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		word-wrap: break-word;
+     }
+     .text-center{
+		text-align: center;
+		clear: both;
+     }
+     .pagination{
+		display: inline-block;
+		padding-left: 0;
+		margin: 30px 0;
+		border-radius: 0;
+     }
+     .pagination>li{
+		display:inline;
+     }
+     .pagination>li>a {
+		position: relative;
+		float: left;
+		padding: 9px 15px;
+		margin: 0 3px;
+		line-height: 1.42857143;
+		color: #888;
+		text-decoration: none;
+		background-color: #fff;
+		border: 1px solid #ebebeb;
+		border-radius: 0;
+     }
+	.pagination>.now_page > a{
+		z-index: 2;
+		color: #ff5e5e;
+		cursor: default;
+		background-color: #fff;
+		border-color: #ebebeb;
+		font-weight: 600;
+	}

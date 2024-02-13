@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 마이페이지 본인계정일 때의 팔로우중인 쉐프 페이지(팔로잉 쉐프가 아무도 없을 때) -->
+	<meta charset="UTF-8">
+	<title>요리를 즐겁게~ 만개의 레시피</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="Recipe_CSS/Recipe_MyPage_FollowingChef.css" rel="stylesheet">
+	<link href="Recipe_CSS/Public/Recipe_Header.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_Footer.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_MyPage_Profile.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_Right_Advertise.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_Body_Frame.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_MyPage_Header.css" rel="stylesheet"/>
+	<link href="Recipe_CSS/Public/Recipe_MyPage_Profile_Change.css" rel="stylesheet"/>
+	<link href="slick-jw/slick_jw.css" rel="stylesheet"/>
+	<link href="slick-jw/slick-theme_jw.css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="js/Recipe_MyPage.js"></script>
+	<script src="js/Recipe_Footer.js"></script>
+	<script src="js/Recipe_Click_Follow.js"></script>
+</head>
+<body>
+<!-- 페이지 최상단 -->
+	<div id="div_header">
+		<div id="div_header_inner">
+			<div id="div_logo_image">
+				<a href="https://www.10000recipe.com/index.html">
+					<img src="https://recipe1.ezmember.co.kr/img/logo4.png"/>
+				</a>
+			</div>
+			<div id="div_search_bar">
+				<form id="searchRecipe">
+					<div id="div_input_group">
+						<input type="text" id="searchText"/>
+						<span>
+							<button id="search_button" type="button">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div id="div_header_button">
+				<div id="div_login_button" class="fl">
+					<a href="">
+						<img src="https://recipe1.ezmember.co.kr/img/ico_user.png"/>
+					</a>
+				</div>
+				<div id="div_recipeWrite_button" class="fl">
+					<a href="">
+						<img src="https://recipe1.ezmember.co.kr/img/tmn_write.png"/>
+					</a>
+				</div>
+				<div id="div_store_button" class="fl">
+					<a href="">
+						<img src="https://recipe1.ezmember.co.kr/img/tmn_store2.png"/>
+					</a>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="div_partner1">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web1.png?v.2"/>
+		</div>
+		<div id="div_partner2">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web2.png?v.2"/>
+		</div>
+	</div>
+<!-- /페이지 최상단 -->
+<!-- 페이지 상단 메뉴바 -->
+	<div id="div_menubar">
+		<div id="div_menu_content">
+			<div class="div_menu_button">
+				<a href="#">추천</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">분류</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">랭킹</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">매거진</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">더보기
+					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+				</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+<!-- /페이지 상단 메뉴바 -->
+<!------------ header ------------>
+	<div id="div_content_outer">
+		<div id="div_content_left" class="fl">
+<!-- 마이페이지 헤더 -->
+			<div id="div_mypage_header">
+				<div class="div_mypage_header_button">
+					<a href="#">
+						<span class="glyphicon glyphicon-cutlery"></span>
+						레시피
+					</a>
+				</div>
+				<div class="div_mypage_header_button">
+					<a href="#">
+						<span class="glyphicon glyphicon-star"></span>
+						요리후기
+					</a>
+				</div>
+				<div class="div_mypage_header_button">
+					<a href="#" class="button-active">
+						<span class="glyphicon glyphicon-user"></span>
+						쉐프
+					</a>
+				</div>
+			</div>
+<!-- /마이페이지 헤더 -->
+<!-- 메인컨텐츠(마이페이지 팔로우쉐프) -->
+			<div id="div_mypage_chef_panel">
+				<div id="div_mypage_chef_sort">
+					<div id="div_mypage_chef_sort1">
+						<div>
+							<a class="open_active">소식받는 쉐프</a>
+						</div>
+					</div>
+					<div id="div_mypage_chef_search_bar">
+						<span class="glyphicon glyphicon-search"></span>
+						<input type="text"/ placeholder="쉐프 닉네임을 입력해 주세요.">
+						<button type="button">검색</button>
+					</div>
+				</div>
+				<div id="div_mypage_chef_body">
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/10/11/e1d6d17cfed1532dd786a37875ab91a01.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>노란장미</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>2,844</b>
+									스크랩
+									<b>472,104</b>
+									소식받는 수
+									<b>6,616</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/06/27/fea6fc65d59cb1c3ac0e341bb284104e1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/06/27/f03ee1a2a49509568aae6270978b50331_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/06/27/033ed87a473133ced580953239f8f23f1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/07/06/9a59f8ee0ebb1967765b2c10bc044d911_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>조은정 Eunjeong Jo</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">글 감사히 잘 봤습니다. 알배기 배추 넣는것은 좋은 생각 같네요. 알배기 배추는 나중에 언제 넣는게 좋은지 알려주세요~ 무만 했을때 보다 배추맛이 첨가되면 동치미 국물 맛이 어떻게 조화가 될지 궁금하네요. 무, 배추 모두 백김치를 좋아하는 사람입니다. ㅎ</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>성주님</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">손질법도 알려주시니 고맙습니다</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>청담거사</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>100</b>
+									스크랩
+									<b>248</b>
+									소식받는 수
+									<b>10</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/cc6a8b8dcab188584986b6a33ed8e3bb1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/d5dd9153530992b56c8d497faa8505391_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/19d7a0e065869dc27a7e55f86b054fce1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/afdf25f6f7b11e393bee1782bc92fd4a1_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+								</div>
+								<div class="div_mypgae_chef_comment">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2020/10/15/679d706ae8cec3828198c200b6ed85311.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>ariel1007</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>767</b>
+									스크랩
+									<b>18,991</b>
+									소식받는 수
+									<b>474</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/0c383b505d6888e88c1630f0f3c178331_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/fadf4d898d6705e99f67b3d025bdc9031_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/21/fad7314f1948604d5b1d2c49c855d9b01_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/21/adb0c054ffd54f9c0471f002a0b78a671_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>島田千春</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">감사합니다!</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>초록초록</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">정말 맛있어보여요. 마침 재료도 있고 꼭 해봐야겠어요.
+레시피 고맙습니다.</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2018/02/24/7fa54357c0cec9db527d74947830e2e01.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>강철새잎</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>3,152</b>
+									스크랩
+									<b>283,751</b>
+									소식받는 수
+									<b>6,658</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/e3ded19ba4e97ff5f8e57c039d6e23be1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/8a4cba80f2031b6dd42d2e50ce05c0601_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/43b85732735c89f216b07ed0e87c785e1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/25/7c755886a8c1403207c88c9e5bcae2511_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>비지니</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">너무나 당당하게 몇 번이나 수타면이라 하셔서 당혹스럽습니다.
+
+이 경우엔 수공면이란 말이 있지만, 흔히들 편하게 칼국수 면발이라 하죠.
+반죽을 내려치고 접고 내려치기를 반복해 그 충격으로 반죽 속의 공기를 빼내어
+탱글탱글하고 기분좋은 씹는 맛을 내는 것이 수타면 아니던가요?
+맛집, 또는 중화요리 좀 하는 집이라 소문난 곳에서 손님 기대에 맞추고자,
+주방에 밀가루 먼지 풀풀 날리고, 땀 뻘뻘 흘려 가며 힘겨이 만들어 내는 면발이지요.
+
+뭐, 사람마다 내려치는 횟수와 소다, 소금, 간수 등의 추가로 쫄깃함의 차이는 있습니다.
+그래도 기계로 쥐어짜는 기계면보다 쫄깃하다고는 할 수는 없습니다.
+다만, 기계가 없던 시대엔 가장 빠르고 쉽게? 쫄깃한 면발을 뽑을 수 있는 제면법이었으며
+오늘날 전통을 잇는다는 상징적인 의미가 크겠죠. 
+
+그렇다고는 해도, 이렇게 홍두깨로 밀고 접어서 썰어내는 면발과는
+엄연히 다른 식감과 의미일진대, 뭉뚱그려 '수타면'이라면 그분들 속상하겠어요.
+
+님이 만드신 면발에 '칠 타(打)'가 들어갈만한 작업이 있었던가요?
+
+제목에 그 양반 이름 파셨으니 님이 없는 소리 하신 건 아닐 테고,
+이연복님이 '이거나 그거나 차이없다'라고 그러던가요?
+이연복님이 '손 수자 들어가면 다 수타면이다'라고 울부짖던가요?
+그 양반이 중화요리에 대한 요리사로서의 신념이 부족한 건가요?
+
+님이 올리신 조리법의 원본까지 두 눈 부릅뜨고 읽어 보았지만,
+그 어디에도 수타 제면법 대신 이 칼국수 제면법을 선택한 이유를
+밝히지 않으면서, 이것을 수타면이라고 하셔서 올려 봅니다. 
+전문가 실력을 못 따라간다는 애매한 글 말고는 없죠?
+
+이것이 '수타면'이란 그릇된 정보를 습득하고 각인하는 것은
+님의 짜장면을 맛있게 먹어 준 님의 가족들만으로 제한을 둡시다.
+
+긴 세월 명맥을 이어 내려 오는 소중한 전통음식뿐만 아니라,
+이미 오래 전 우리 입맛에 맞춰 발전하고 대중화되어 고유의 것처럼 인식되는 이런 음식들...
+그렇게 대충, 모른 척 뭉개어도 되는 천박한 음식 아닙니다.
+거장 이름 내세워 거짓을 사실인양 왜곡시켜도 안되고,
+유명 장사꾼 말만 듣고, 비슷한 값싼 재료 쑤셔박아 혓바닥 속이는 음식으로
+변질되어서도 안됩니다.
+모두모두 온전히 보전되고 발전해, 미처 맛보지 못한 우리 후손들에게도
+자랑스럽게 내어 놓을 수 있는 정말 훌륭한 음식들입니다.</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>lucky oh!</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">배추 헹구지 않아도 많이 안 짠가요?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/10/11/e1d6d17cfed1532dd786a37875ab91a01.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>스마일로즈의건강밥상</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>2,559</b>
+									스크랩
+									<b>238,719</b>
+									소식받는 수
+									<b>5,364</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/45eae9e221dcef1936a869990c9a1f6a1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/0f4844320622c776c6c70d877a4871fa1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/d7173d1045287716d270b81cb49b2da61_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/1444bea11ed96603ef613c6cfc0153321_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>시냇가</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">착즙후 건더기는 버리는건지요</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>스마일로즈의건강밥상</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">발사믹식초는 사용해본적 없는데 특유의 향이 있는 발사믹식좋아하시면 사용해도 괜찮을것 같은데요 </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2022/03/01/07e84fe546461d1f21990acbcb7237581.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>꼬꼬부기</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>626</b>
+									스크랩
+									<b>16,375</b>
+									소식받는 수
+									<b>268</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/28/cefe3eccc6a62ed37fd5cedccd57afa21_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/80a031251e50405348d69a7c6b2f4ced1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/bd98d603b9ffc8ddbd407f1d13d0e0971_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/f63bdef0946662113c0a016c625bb6161_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>이뿌니</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">버터 27g 넣어도 괜찮을까요?</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>.사랑꾼</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">감사합니다 </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2015/07/29/e4be91d70e81a206b600e8b92217915e1.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>좋아좋아3</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>2,950</b>
+									스크랩
+									<b>185,663</b>
+									소식받는 수
+									<b>3,760</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/afec226be86d9ce8ce8fab1a720ae77f1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/b9be3b80745eed6da4cac59994d9e6601_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/583286bfc1c9acb6cac62e816f7bc5e81_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/551d8ada854ce8303192066a39769d4f1_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>뿡빵이★</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">양념은 언제넣나요</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>요못알</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">안녕하세요.
+혹시 조림할때 물은 안넣어도 되나요?</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2016/01/29/900013400086b533aef0411aeb3ee7d71.png"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>만개의레시피</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>4,960</b>
+									스크랩
+									<b>3,126,022</b>
+									소식받는 수
+									<b>105,974</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/06d71f75e9075d79d4adb79ac07293561_m.png"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/a13fc7ab2bd18abab9aeb63ff84b720a1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/22/2cbfdda6b7b372e9a455a1fe0cf88c221_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/16/c91947a3cf7708602d27abe995e2ec321_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>감자고추어무이</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">소주를 넣는 이유는 뭘까요? 불린 후에 물로 헹궈야하나요? 그냥 할 경우에 소주냄새가 안날까요? 아이랑 먹을꺼라 조심스러워서 문의드립니다^^;;</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>선진 (미진,재민)</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">밥수저 기준인가요? 
+아님 계량스푼 기준인가요?
+사진에는 나무수저가보여서요</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2019/02/20/8273030fbd7be90a65ac82e1fae1df361.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>배고픈엄마</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>2,003</b>
+									스크랩
+									<b>386,978</b>
+									소식받는 수
+									<b>8,054</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/27/184c8d981711871bcc50a0af24ecf9761_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/ccb0cc950d61c4633407f139ec20f73b1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/c61b91d3d557becbc1d8a560c7f172991_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/24/27edabd03ebf5ed9aa1a4d9e8d9d86a21_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>김영혜</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">글을 참 재밌게 쓰시네요. 조리법이 아니라 이야기 듣는 듯 ㅎ 사진도 참 맛깔지게 찍으셨네요. 속이 안 찬 배추가 몇포기 있어 무 한단 사서 시도해보고 후기 올릴게요.</a>
+									</div>
+								</div>
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>qlgod1212</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">무 절이고 나온 물은 어디에 사용하나요? 버리지 말레놓고 소금물을 새로 만들으란건지 기존에 절인무에서 나온 물을 쓰란건지 햇갈리게 적어 놓으셨네요</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="div_mypage_chef_item">
+						<div class="div_mypage_chef_img">
+							<a href="#">
+								<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/06/12/a2ad0a2168b53f885a2c6ea3872fdf2d1.jpg"/>
+							</a> 
+						</div>
+						<div class="div_mypage_chef_content">
+							<div class="div_mypage_chef_user">
+								<div class="div_mypage_chef_user_name">
+									<a>동이</a>
+									<button type="button" class="btn_follow_user delete">
+										<span class="glyphicon glyphicon-minus"></span>
+										소식받기 해제
+									</button>
+								</div>
+								<div class="div_mypage_chef_user_figures">
+									레시피
+									<b>109</b>
+									스크랩
+									<b>2,261</b>
+									소식받는 수
+									<b>31</b>
+								</div>
+							</div>
+							<div class="div_mypage_chef_recipe_img">
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/7a20213cb11e8fae036abfa2851563fe1_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/26/a8de38515aef4744c99b202835366de71_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/13/cfb8b5f7989600da936dbdcda0110b131_m.jpg"/>
+								</a>
+								<a href="#">
+									<img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/11/13/f9060d6ed235bb4cbd1fdc821e204c341_m.jpg"/>
+								</a>
+							</div>
+							<div class="div_mypgae_chef_comments">
+								<div class="div_mypgae_chef_comment">
+									<div>
+										<a href="#">
+											<b>두분</b>
+										</a>
+									</div>
+									<div>
+										<a href="#">11번은 뭐라 써있는걸까요 ㅠㅠ</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!-- /메인컨텐츠(마이페이지 팔로우쉐프) -->
+<!-- pagination -->
+				<div id="div_mypage_page_panel">
+					<div id="div_mypage_page_bundle">
+						<div class="div_mypage_page_button">
+							<a href="#" class="button_active">1</a>
+						</div>
+						<div class="div_mypage_page_button">
+							<a href="#">2</a>
+						</div>
+						<div class="div_mypage_page_button">
+							<a href="#">3</a>
+						</div>
+						<div class="div_mypage_page_button">
+							<a href="#">4</a>
+						</div>
+						<div class="div_mypage_page_button">
+							<a href="#">5</a>
+						</div>
+						<div class="div_mypage_page_button">
+							<a href="#">»</a>
+						</div>
+					</div>
+				</div>
+<!-- /pagination -->
+			</div>
+		</div>
+		<div id="div_content_right" class="fl">
+<!-- 프로필사진과 자기소개 변경창 -->
+			<div id="div_profile_change" class="div_mypage_extra">
+				<div id="div_profile_change_area" class="div_mypage_extra_area">
+					<div id="div_profile_change_box" class="div_mypage_extra_box">
+						<div id="div_change_box_header" class="div_mypage_extra_box_title">
+							<h4 class="h4_box_header_title">프로필 사진 / 자기소개 편집</h4>
+							<button type="button" class="button_box_close">
+								<img src="https://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기"/>
+							</button>
+						</div>
+						<div id="div_change_box_body" class="div_mypage_extra_box_body">
+							<div id="div_img_change_box">
+								<img id="profile_img_preview"src="https://recipe1.ezmember.co.kr/cache/rpf/2023/10/11/f1e2b589eb0307d68ed4331c43fafc55.jpg"/>
+								<div id="div_img_change_box_button">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/2023/btn_pic.png" alt="사진첩"/>
+									</a>
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/2023/btn_del.png" alt="휴지통"/>
+									</a>
+								</div>
+							</div>
+							<div id="div_text_change_box">
+								<div id="div_text_input">
+									<input type="text" id="input_self_intro" name="self_intro" placeholder="자기소개를 100자 이내로 작성해 주세요."/>
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/2022/icon_close2.png" alt="삭제"/>
+									</a>
+								</div>
+								<div id="div_change_confirm">
+									<button type="button">취소</button>
+									<button type="button">저장</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- /프로필사진과 자기소개 변경창 -->
+<!-- 팔로워 팔로잉 보여주는 창 -->
+			<div id="div_view_following" class="div_mypage_extra">
+				<div id="div_view_following_area" class="div_mypage_extra_area">
+					<div id="div_view_following_box" class="div_mypage_extra_box">
+						<div id="div_view_following_header" class="div_mypage_extra_box_title">
+							<h4 class="h4_box_header_title" id="view_follow_uid">ljw님의 친구</h4>
+							<button type="button" class="button_box_close">
+								<img src="https://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기"/>
+							</button>
+						</div>
+						<div id="div_view_following_body" class="div_mypage_extra_box_body">
+							<ul class="ul_follow_list">
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 팔로잉 완성하고 일단은 팔로워 하나 더 만들어두기 -->
+			<div id="div_view_follower" class="div_mypage_extra">
+				<div id="div_view_follower_area" class="div_mypage_extra_area">
+					<div id="div_view_follower_box" class="div_mypage_extra_box">
+						<div id="div_view_follower_header" class="div_mypage_extra_box_title">
+							<h4 class="h4_box_header_title" id="view_follow_uid">ljw님을 따르는 친구</h4>
+							<button type="button" class="button_box_close">
+								<img src="https://recipe1.ezmember.co.kr/img/btn_close.gif" alt="닫기"/>
+							</button>
+						</div>
+						<div id="div_view_follower_body" class="div_mypage_extra_box_body">
+							<ul class="ul_follow_list">
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+								<li class="li_follow_user">
+									<a>
+										<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/09/10/9c755b29130b18be5992f6bc9f0a8bba1.jpg"/>
+										청담거사
+									</a>
+									<button type="button" class="btn_follow_user">삭제</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+<!-- /팔로워 팔로잉 보여주는 창 -->
+<!-- 프로필 -->
+			<div id="div_profile_panel">
+				<div id="div_profile_background"></div>
+				<div id="div_profile_body">
+					<div id="div_profile_img">
+						<a id="a_profile_img">
+							<img src="https://recipe1.ezmember.co.kr/cache/rpf/2023/10/11/e1d6d17cfed1532dd786a37875ab91a01.jpg"/>
+						</a>
+						<a id="a_change_profile_img">
+							<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_camera2.png" alt="사진변경"/>
+						</a>
+					</div>
+					<div id="div_profile_user_name">
+						<b>ljw</b>
+					</div>
+					<div id="div_profile_user_introduce">
+						<span class="glyphicon glyphicon-pencil"></span>
+						<a href="#">
+							<u>자기소개를 등록할 수 있습니다.</u>
+						</a>
+					</div>
+					<div id="div_profile_figures">
+						<a href="#">
+							총조회
+							<b>0</b>
+						</a>
+						<span>·</span>
+						<a href="#">
+							팔로워
+							<b>1</b>
+						</a>
+						<span>·</span>
+						<a href="#">
+							팔로잉
+							<b>103</b>
+						</a>
+					</div>
+				</div>
+			</div>
+<!-- /프로필 -->
+			<div class="blank_space"></div>
+<!-- 사이트 자체 광고 -->
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/rpe/2023/11/10/7082137c2850ee4529a1fbf6dbef597e1.jpg"/>
+				</a>
+			</div>
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/rpe/2023/10/30/fced5774b69326a935e9f8885eb714ea1.jpg"/>
+				</a>
+			</div>
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/shop/2023/11/06/ace207f7d4a96271e21bea459c7e3ff9.jpg"/>
+				</a>
+			</div>
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/shop/2023/11/23/b0f1fa801ac2ba6e631318df934e5c95.jpg"/>
+				</a>
+			</div>
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/shop/2023/11/20/b21b9c6dc74284e648ea0c67d22b3c9e.jpg"/>
+				</a>
+			</div>
+			<div class="advertisement">
+				<a href="#">
+					<img src="https://recipe1.ezmember.co.kr/cache/shop/2021/07/09/f0705fbc1e6c357c8f07817cddfe614e.jpg"/>
+				</a>
+			</div>
+<!-- /사이트 자체 광고 -->
+<!-- 스토어 베스트상품 -->
+			<div id="div_store_panel">
+				<div id="div_store_best">
+					<div id="div_store_title">
+						<b>만개스토어
+							<span>BEST</span>
+						</b>
+						<a href="#">더보기 &gt;</a>
+						<div style="clear:both;"></div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/23/02/09/1000034404/1000034404_list_077.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">Samsung 삼성 공기청정기 AX90T7020WBD</p>
+									<p class="product_price">499,000<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2.png"/>
+										<span>(10)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/23/10/41/1000040809/1000040809_list_022.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">[15%할인쿠폰] 르젠 IH 인덕션 가열식 가습기 5세대 (LPL-IH600S / LPL-IH650S / LPL-IH650G)</p>
+									<p class="product_price">289,000<small>원</small></p>
+									<p class="product_star">
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/23/11/45/1000041358/1000041358_list_070.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">한일 이지필 글라스 가열식 가습기 3.5L HGSP-3500R</p>
+									<p class="product_price">219,000<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<span>(1)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/22/09/38/1000030593/1000030593_list_032.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">[단독특가] 슈맥스 100% 그래핀 탄소매트(국내최초 그래핀 원단 사용/전자파,라돈 불검출/EMF 인증)</p>
+									<p class="product_price">99,000<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2.png"/>
+										<span>(14)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/23/06/24/1000037511/1000037511_list_028.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">필립스 전기면도기 S5000시리즈 쉐이브앤고 S5466/17</p>
+									<p class="product_price">82,000<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2.png"/>
+										<span>(17)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/23/11/46/1000041438/1000041438_list_032.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">트루쿡 국내생산 IH 세라믹 인덕션 후라이팬&냄비 쿡웨어 모음전</p>
+									<p class="product_price">19,900<small>원</small></p>
+									<p class="product_star">
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/21/09/36/1000022698/1000022698_list_010.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">[케어팟] 스테인리스 초음파 가습기 4L MS031S2</p>
+									<p class="product_price">149,000<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2.png"/>
+										<span>(32)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_body">
+						<div class="div_product">
+							<a href="#">
+								<div class="div_product_img" style="background:url(https://recipe1.ezmember.co.kr/cache/data/goods/21/02/08/1000016877/1000016877_list_070.jpg) center no-repeat; background-size:cover; height:305px;"></div>
+								<div class="div_product_text">
+									<p class="product_title">몽블랑 에펠 커트러리 모음전 (5color)</p>
+									<p class="product_price">2,900<small>원</small></p>
+									<p class="product_star">
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2_on.png"/>
+										<img src="https://recipe1.ezmember.co.kr/img/mobile/icon_star2.png"/>
+										<span>(18)</span>
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div id="div_store_more">
+						<button type="button" id="store_more_button">더보기 +</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="border-top: 1px solid #e6e6e6; clear:both;"></div>
+<!-- /스토어 베스트상품 -->
+	</div>
+<!------------ body ------------>
+<!-- 페이지 하단 최근 본 레시피 -->
+	<div id="div_recent_recipe_panel">
+		<div id="div_recent_recipe_content">
+			<h3>최근 본 레시피</h3>
+			<div id="div_recent_recipe_body">
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/14/67b39b7159fa14c51042fe0674e7399f1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>기름 없이 볶아 다이어트에 좋은 중국식 청경채 돼지...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/30/16fc5e69d9c7624353361f4a65f4752a1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>실패는없다!백종원 냉국레시피!...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/10/07/da4e0452ac3bd20bb0528f4abc1211881_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>꿀마늘 닭강정(아이들 단골메뉴 찜♡♡)...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/22/209d1b0860d71c45978f804721f107f71_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>아이들이 좋아하는 초간단 간식, 퐁크러쉬 쉐이크 레...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/05/21/52ec68320e673157a36e0bdce94f89561_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>에어프라이어 소시지 피자...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/05/05/f898a7e9e03e179c2c6b7ad65fd946321_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>차돌박이 파스타 </div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/14/67b39b7159fa14c51042fe0674e7399f1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>기름 없이 볶아 다이어트에 좋은 중국식 청경채 돼지...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/30/16fc5e69d9c7624353361f4a65f4752a1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>실패는없다!백종원 냉국레시피!...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/10/07/da4e0452ac3bd20bb0528f4abc1211881_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>꿀마늘 닭강정(아이들 단골메뉴 찜♡♡)...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/22/209d1b0860d71c45978f804721f107f71_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>아이들이 좋아하는 초간단 간식, 퐁크러쉬 쉐이크 레...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/05/21/52ec68320e673157a36e0bdce94f89561_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>에어프라이어 소시지 피자...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/05/05/f898a7e9e03e179c2c6b7ad65fd946321_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>차돌박이 파스타 </div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/14/67b39b7159fa14c51042fe0674e7399f1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>기름 없이 볶아 다이어트에 좋은 중국식 청경채 돼지...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/30/16fc5e69d9c7624353361f4a65f4752a1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>실패는없다!백종원 냉국레시피!...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/10/07/da4e0452ac3bd20bb0528f4abc1211881_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>꿀마늘 닭강정(아이들 단골메뉴 찜♡♡)...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/22/209d1b0860d71c45978f804721f107f71_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>아이들이 좋아하는 초간단 간식, 퐁크러쉬 쉐이크 레...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/05/21/52ec68320e673157a36e0bdce94f89561_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>에어프라이어 소시지 피자...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/05/05/f898a7e9e03e179c2c6b7ad65fd946321_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>차돌박이 파스타 </div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/14/67b39b7159fa14c51042fe0674e7399f1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>기름 없이 볶아 다이어트에 좋은 중국식 청경채 돼지...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/30/16fc5e69d9c7624353361f4a65f4752a1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>실패는없다!백종원 냉국레시피!...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/10/07/da4e0452ac3bd20bb0528f4abc1211881_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>꿀마늘 닭강정(아이들 단골메뉴 찜♡♡)...</div>
+						</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/22/209d1b0860d71c45978f804721f107f71_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">
+							<div>아이들이 좋아하는 초간단 간식, 퐁크러쉬 쉐이크 레...</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- /페이지 하단 최근 본 레시피 -->
+<!-- footer 흰색배경부분 -->
+	<div id="footer1">
+		<div id="footer1_panel">
+			<div id="footer1_content1">
+				<p class="f_content1_link">
+					<a>회사소개</a>
+					<span>|</span>
+					<a>광고문의</a>
+					<span>|</span>
+					<a>개인정보처리방침</a>
+					<span>|</span>
+					<a>이용약관</a>
+					<span>|</span>
+					<a>고객센터</a>
+				</p>
+				<p class="f_content1_info">
+					대표 : 이인경 / E : help@10000recipe.com / F : 02) 323-5049 <br/>
+					서울 금천구 가산동 371-50 에이스하이엔드타워 3차 1106-1호 <br/>
+					문의전화(운영시간 평일 10:00~18:00)<br/>
+					쇼핑문의(만개스토어) : 02-6953-4433<br/>
+					서비스 이용문의 : 070-4896-6416 
+				</p>
+				<p class="f_content1_info">
+					(주)만개의레시피 / 사업자등록번호 291-81-02485 / 통신판매업신고 2022-서울금천-3089 / 벤처기업확인 / <a href="#" target="_self" style="color:#999; font-size:13px">사업자정보확인</a> <br>
+					서울지방중소기업청 제 031134233-1-01643호
+				</p>
+				<p class="f_content1_info">
+					Copyright <b style="font-size:13px;">만개의레시피</b> Inc. All Rights Reserved
+				</p>
+			</div>
+			<div id="footer1_content2">
+				<a id="app_download">
+					<img src="https://recipe1.ezmember.co.kr/img/btm_app2.gif" alt="app다운로드"/>
+				</a>
+				<div id="banner_sns">
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_1.gif" alt="페이스북"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_2.gif" alt="인스타그램"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_3.gif" alt="유튜브"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_4_1.gif" alt="네이버블로그"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_5.gif" alt="네이버포스트"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_6.gif" alt="카카오TV"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_7.gif" alt="카카오스토리"/>
+					</a>
+				</div>
+			</div>
+			<div id="footer1_content3">
+				<textarea id="f_customer_send" name="cs_txt" placeholder="불편사항이나 제안사항이 있으신가요?
+만개의레시피에 전하고 싶은 의견을 남겨주세요."></textarea>
+				<button type="button" id="f_send_cs_button">의견제출</button>
+				<p id="f_cs_notice">
+					개별회신을 원하시면 <a href="#" style="text-decoration:underline; color:#666; font-size:13px">여기</a>에 문의하세요.
+				</p>
+			</div>
+		</div>
+	</div>
+<!-- /footer 흰색배경부분 -->
+<!-- footer 녹색배경부분 -->
+	<div id="footer2">
+		<div id="footer2_panel">
+			<div id="f2_logo">
+				<img src="https://recipe1.ezmember.co.kr/img/logo6.png"/>
+			</div>
+			<div id="f2_all_count">
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon1.png) center no-repeat;"></span>
+						제휴업체수
+					</a>
+					<b>575</b>
+				</div>
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon2.png) center no-repeat;"></span>
+						총 쉐프수
+					</a>
+					<b>3,970</b>
+				</div>
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon3.png) center no-repeat;"></span>
+						총 레시피수
+					</a>
+					<b>210,881</b>
+				</div>
+				<div class="div_count_box">
+					<a>
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon4.png) center no-repeat;"></span>
+						월 방문자수
+					</a>
+					<b>5,140,000</b>
+				</div>
+				<div class="div_count_box">
+					<a>
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon5.png) center no-repeat;"></span>
+						총 레시피 조회수
+					</a>
+					<b>2,875,362,521</b>
+				</div>
+			</div>
+			<div id="f2_send_mail">
+				<a>
+					<img src="https://recipe1.ezmember.co.kr/img/btm_img2.png"/>
+				</a>
+			</div>
+		</div>
+<!-- /footer 녹색배경부분 -->
+<!-- 페이지 최하단 since -->
+		<div id="footer2_Since">
+			<img src="https://recipe1.ezmember.co.kr/img/btm_since.png"/>
+		</div>
+	</div>
+<!-- /페이지 최하단 since -->
+
+<!-- slider -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="slick-jw/slick_jw.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#div_recent_recipe_body").slick({
+				infinite: false,
+				slidesToShow: 6,
+				slidesToScroll: 6
+			});
+		})
+	</script>
+<!------------ footer ------------>
+</body>
+</html>

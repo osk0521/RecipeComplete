@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(마이페이지 레시피 작성중) */
+		#div_mypage_recipe_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort {
+			display: flex;
+			justify-content: space-between;
+			font-size: 17px;
+			border-bottom: 1px solid #ccc;
+		} 
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort1 {
+			display: flex;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort1 > div {
+			background: #fff;
+			color: #666;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort1 > div > a {
+			display: block;
+			padding: 14px 38px;
+			margin-bottom: -1px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort1 > div > a:hover {
+			color: #515151;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort1 > div > a.open_active {
+			cursor: default;
+			border: 1px solid #ccc;
+			border-bottom: 1px solid #fff;
+			font-weight: 600;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort2 {
+			display: flex;
+			padding-right: 10px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort2 > a {
+			display: block;
+			color: #333;
+			padding: 12px;
+			font-size: 14px;
+			line-height: 2;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort2 > a:hover {
+			color: #333;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_sort > #div_mypage_recipe_sort2 > a.sort-active {
+			background: url("https://recipe1.ezmember.co.kr/img/icon_check.gif") left 15px no-repeat;
+			padding-left: 18px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body {
+			text-align: center;
+			margin: 22px 10px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body > #div_mypage_recipe_none {
+			padding: 40px 0;
+			color: #999;
+			font-size: 16px;
+			line-height: 26px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body > #div_mypage_recipe_none > img {
+			width: 180px;
+			height: 180px;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body > #div_mypage_recipe_none > p {
+			margin: 0;
+			padding: 25px 0 20px;
+			font-size: 24px;
+			color: #333;
+			line-height: 150%;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body > #div_mypage_recipe_none > button {
+			margin: 0 4px;
+			margin-top: 20px;
+			padding: 10px 30px;
+			font-size: 18px;
+		    line-height: 1.3333333;
+		    border-radius: 3px;
+		    color: #fff;
+		    background: #46ae4f;
+		    border: 1px solid #497725;
+		}
+		#div_mypage_recipe_body > .div_mypage_recipe_writing_content {
+			border-bottom: 1px solid #e6e7e8;
+			padding: 4px 0 20px 20px;
+			display: flex;
+			margin-top: 15px;
+		}
+		#div_mypage_recipe_body > .div_mypage_recipe_writing_content:first-child {
+			margin-top: 0;
+		}
+		.div_mypage_recipe_writing_content > .div_mypage_recipe_writing_content_img {
+			padding-right: 26px;
+		}
+		.div_mypage_recipe_writing_content > .div_mypage_recipe_writing_content_img img {
+			width: 180px;
+			height: 180px;
+		}
+		.div_mypage_recipe_writing_content > . h2 {
+			font-weight: 400;
+			font-size: 28px;
+		}
+		#div_mypage_page_panel > #div_mypage_page_bundle {
+			display: flex;
+			justify-content: center;
+			margin: 30px 0;
+		}
+		#div_mypage_page_bundle > .div_mypage_page_button > a {
+			display: inline-block;
+			padding: 9px 15px;
+			margin: 0 3px;
+			text-decoration: none;
+			border: 1px solid #ebebeb;
+		}
+		#div_mypage_page_bundle > .div_mypage_page_button > a.button_active {
+			color: #ff5e5e;
+			cursor: default;
+			font-weight: 600;
+		}
+		#div_mypage_recipe_panel > #div_mypage_recipe_body > #div_mypage_recipe_search_bar {
+			width: 360px;
+			margin: -6px auto 30px;
+		}
+		#div_mypage_recipe_search_bar > form {
+			display: flex;
+		}
+		#div_mypage_recipe_search_bar > form > input {
+			border-top-left-radius: 3px;
+			border-botton-left-radius: 3px;
+			height: 40px;
+			width: 100%;
+			padding: 6px 12px;
+			font-size: 14px;
+			color: #555;
+			background: #fff;
+			border: 1px solid #ccc;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#div_mypage_recipe_search_bar > form button {
+			width: 40px;
+			height: 40px;
+			background: #fff;
+			border: 1px solid #ccc;
+			border-left: none;
+		}
+

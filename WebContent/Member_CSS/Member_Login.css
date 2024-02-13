@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+		* {
+			box-sizing: border-box;		
+			font-size: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		body {
+			min-width: 1240px;
+			background: rgb(255, 255, 255);
+			margin: 0;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #333;
+		}
+		.border {
+			border: 1px solid red;
+		}
+		#div_header {
+			width: 100%;
+			height: 85px;
+			background: url("https://recipe1.ezmember.co.kr/img/bg_wave.png?v.2") left bottom repeat-x;
+			text-align: center;
+			padding-top: 15px;
+		}
+		#div_content_outer {
+			width: 460px;
+			margin: 0 auto 30px;
+			padding-top: 20px;
+		}
+		#div_content_outer > h2 {
+			text-align: center;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 15px;
+			font-size: 30px;
+		}
+		#div_panel {
+			width: 460px;
+			padding: 0;
+			font-size: 16px;
+			line-height: 25px;
+		}
+		#div_panel > div:nth-child(1) {
+			padding-top: 30px;
+			text-align: center;
+		}
+		#div_panel > div:nth-child(1) > button {
+			background: #ffe600;
+			color: #333;
+			width: 323.672px;
+			height: 70px;
+			margin: 0 4px 20px 0;
+			padding: 0;
+			border: 1px solid rgba(0, 0, 0, 0.14);
+			border-radius: 8px;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+			cursor: pointer;
+		}
+		#div_panel > div:nth-child(1) > button > span {
+			font-size: 20px;
+			padding: 16px 0px 15px 46px;
+			background: url("https://recipe1.ezmember.co.kr/img/mobile/2022/icon_sns_k.png") left 16px no-repeat;
+			background-size: 30px auto;
+			display: inline-block;
+		}
+		#div_panel > div:nth-child(2) {
+			text-align: center;
+			padding: 8px 0 40px;
+		}
+		.btn {
+			display: inline-block;
+			padding: 6px 20px;
+			margin: 0 2px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.42857143;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#div_panel .btn {
+			margin: 0 4px 20px 0;
+			position: relative;
+		}
+		#div_panel > div:nth-child(2) > button {
+			padding: 6px;
+			margin: 0 15px;
+			background: #fff;
+			width: 62px;
+			height: 62px;
+			border: 1px solid rgba(0, 0, 0, 0.14);
+			border-radius: 50%;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+		}
+		#div_panel > div:nth-child(2) > button > img {
+			width: 100%;
+		}
+		#div_panel > form > .textbox {
+			display: table-cell;
+			width: 1%;
+		}
+		#div_panel > form > .textbox > input {
+			height: 60px;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			font-size: 18px;
+			padding: 10px 2px;
+			width: 100%;
+		}
+		#div_panel > form > div:nth-child(1) {
+			padding-right: 22px;
+		}
+		#div_panel > form > div:nth-child(3) {
+			position: relative;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#div_panel > form > div:nth-child(3) > label {
+			display: inline-block;
+			min-height: 20px;
+			padding-left: 20px;
+			margin-bottom: 0px;
+			font-weight: 400;
+			cursor: pointer;
+		}
+		#div_panel > form > div:nth-child(3) > label > input {
+			position: absolute;
+			height: auto;
+			margin-top: 6px;
+			margin-left: -20px;
+		}
+		#div_panel > form > div:nth-child(3) > label > span {
+			font-size: 16px;
+			color: #888;
+		}
+		#div_panel > form > div:nth-child(5) {
+			width: 100%;
+			text-align: center;
+			margin: 30px 0;
+		}
+		#div_panel > form > div:nth-child(5) > button {
+			background: #fff;
+			color: #333;
+			font-size: 20px;
+			border: 1px solid rgba(0, 0, 0, 0.14);
+			padding: 10px 60px 11px;
+			border-radius: 28px;
+			box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+		}
+		#div_extra_button {
+			text-align: center;
+			padding: 20px 0;
+		}
+		#div_extra_button > a {
+			font-size: 16px;
+			padding: 6px 10px;
+			text-decoration: underline;
+			color: #666;
+		}

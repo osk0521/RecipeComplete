@@ -1,0 +1,238 @@
+@charset "UTF-8";
+		
+/* 여기에 작성 */
+		.main_cont_wrap{
+			min-height: 560px;
+			position: relative;
+		}
+		#div_store_location_wrap {
+			width: 100%;
+			border-bottom: 1px solid #ededed;
+		}
+		#div_store_location_content {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#div_store_location_content > span {
+			display: block;
+			padding: 12px 0 12px 0;
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a {
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a:hover {
+			text-decoration: underline;
+		}
+		#div_mypage {
+			padding: 45px 0 0 0;
+			position:relative;
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+		}
+		#div_mypage_right {
+			width: 1200px;
+			padding: 0 0 0 40px;
+			min-height: 500px;
+			margin: auto;
+		}
+		#div_mypage_main {
+			padding: 0 0 50px 0;
+		}
+		.div_mypage_title {
+			padding-bottom: 5px;
+			display: flex;
+    		justify-content: space-between;
+    		align-items: end;
+    		border-bottom: 1px solid #dbdbdb;
+    		margin-bottom: 30px;
+    		padding-bottom: 10px;
+		}
+		.div_mypage_title > h3 {
+			display: inline-block;
+			font-size: 22px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-weight: 500;
+		}
+		.div_mypage_title>ol{
+			display: flex;
+		}
+		.div_mypage_title>ol>.cont_now{
+			color: #46AE4F;
+    		font-weight: bold;
+    		width: 117px;
+		}
+		.div_mypage_title>ol>.icon_now>svg{
+			fill: #46AE4F;
+    		margin-top: 5px;
+		}
+		.div_mypage_title>ol>li{
+			font-size: 14px;
+    		color: #d1d1d1;
+		}
+		.div_mypage_title>ol>li>svg{
+			fill: #d1d1d1;
+    		margin-top: 5px;
+		}
+		.order_complete{
+			
+    		text-align: center;
+		}
+		.order_complete1>span>figure{
+			width: 98px;
+			height: 107px;
+		}
+		.order_complete1>span>figure>img{
+			width: 100%;
+			height: 100%;
+		}
+		.order_goods_tit{
+			margin-bottom: 15px;
+			display: flex;
+			align-items: end;
+		}
+		.order_goods_tit>span{
+			font-size: 22px;
+		}
+		.order_goods_tit>a{
+			background: #efefef;
+    		padding: 6px;
+    		color: #777;
+    		font-size: 14px;
+    		margin-left: 25px;
+		}
+		.total_cont>span,.total_cont>span>b{
+			color: #999;
+		}
+		.select_delete>a{
+			display: flex;
+		}
+		.select_delete>a>span{
+			font-size: 15px;
+		}
+		.select_delete>a>figure{
+			width: 22px;
+			height: 22px;
+		}
+		.select_delete>a>figure>img{
+			width: 100%;
+			height: 100%;
+		}
+	
+		.grid_wrap_7row{
+			display: grid;
+			width:1160px;
+			border-top: 1px solid #dbdbdb;
+			margin:auto;
+			margin-bottom: 25px;
+			grid-template-columns: 180px 960px;
+			grid-template-rows: 50px 50px 50px 50px 50px 70px 50px 50px 50px 50px 50px;
+
+		}
+		.main1{
+			background: #f7f7f7;
+			text-align: left;
+			border-bottom: 1px solid #dbdbdb;
+			font-size: 14px;
+    		text-align: center;
+    		font-weight: 500;
+    		padding-top: 13px;
+		}
+		.main2{
+			color: #777777;
+   	 		border-bottom: 1px solid #dbdbdb;
+   	 		font-size: 14px;
+   	 		display: flex;
+    		align-items: center;
+    		padding-left: 20px;
+   	 		
+		}
+		.main1>span{
+			color: red;
+		}
+		.main2>input{
+			border: 1px solid #d6d6d6;
+			border-radius: 4px;
+			height: 33px;
+		}
+		.main2>ul>li{
+			display: flex;
+    		align-items: center;
+		}
+		.main2>ul>li>input,.main2>ul>li>select{
+			border: 1px solid #d6d6d6;
+			border-radius: 4px;
+			height: 33px;
+		}
+		.main2>ul{
+			display: flex;
+		}
+		.main2>ul>li{
+			margin-right: 20px;
+		}
+		.main2>ul>li>a{
+			background: #efefef;
+    		padding: 6px;
+    		color: #777;
+		}
+		#output_address{
+			width: 500px;
+		}
+		#input_text{
+			 width: 900px;
+		}
+		.payment>ul{
+			display: flex;
+			justify-content: space-between;
+		}
+		.payment>ul>li>figure{
+			width: 150px;
+			height: 150px;
+		}
+		.payment>ul>li>figure>img{
+			width: 100%;
+			height: 100%;
+		}
+		.order_agree{
+			margin-top: 20px;
+		}
+		.order_agree3{
+			 	overflow-x: hidden;
+    			overflow-y: auto;
+    			height: 60px;
+    			margin: 0 0 10px 0;
+    			padding: 5px 20px;
+    			border: 1px solid #ddd;
+		}
+		.order_box{
+			text-align: right;
+			margin-top: 50px;
+		}
+		.order_box>button{
+			min-width: 190px;
+    		height: 55px;
+    		font-size: 14px;
+		}
+		#select_order{
+			background: #fff;
+			color: #333333;
+    		border: 1px solid #bbbbbb;
+    		margin-right: 10px;
+		}
+		#all_order{
+			border: 1px solid #46AE4F;
+    		background: #46AE4F;
+    		color: #ffffff;
+		}
+		
+		.order_box_comment>span{
+			color: #ab3e55;
+		}

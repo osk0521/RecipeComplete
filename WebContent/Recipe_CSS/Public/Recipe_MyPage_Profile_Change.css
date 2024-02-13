@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* 마이페이지 프로필 사진 변경과 자기소개 변경창 */
+		.div_mypage_extra {
+			display: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1040;
+			outline: 0;
+			padding-right: 17px;
+		}
+		#div_profile_change_area {
+			transform: translate(0, 0);
+			width: 600px;
+			margin: 30px auto;
+		}
+		.div_mypage_extra_box {
+			box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+			position: relative;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid rgba(0, 0, 0, .2);
+			border-radius: 10px;
+			outline: 0;
+			z-index: 1050;
+		}
+		.div_mypage_extra_box_title {
+			min-height: 16.43px;
+			padding: 15px 17px 14px;
+			border-bottom: 1px solid #b4b4b4;
+			background: #efefef;
+			border-radius: 10px 10px 0 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		.h4_box_header_title {
+			margin: 0;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.42857143;
+		}
+		.button_box_close {
+			opacity: 1;
+			cursor: pointer;
+			border: 0;
+			background: 0 0;
+		}
+		.div_mypage_extra_box_body {
+			padding: 30px 0;
+			text-align: center;
+			position: relative;
+		}
+		#div_img_change_box {
+			position: relative;
+		}
+		#div_img_change_box > #profile_img_preview {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+		#div_img_change_box_button {
+			position: absolute;
+			width: 200px;
+			left: 50%;
+			margin-left: -100px;
+			bottom: -10px;
+		}
+		#div_img_change_box_button > label {
+			cursor: pointer;
+		}
+		#div_img_change_box_button > label > img {
+			width: 60px;
+		}
+		#div_img_change_box_button > a > img {
+			width: 60px;
+		}
+		#div_text_change_box {
+			margin-top: 10px;
+		}
+		#div_text_input {
+			position: relative;
+			padding: 15px 40px 5px;
+			font-size: 12px;
+			margin-bottom: 10px;
+		}
+		#div_text_input > #input_self_intro {
+			border: 1px solid #ddd;
+			width: 100%;
+			height: 30px;
+			padding: 5px 10px;
+			padding-right: 24px;
+			line-height: 1.5;
+			border-radius: 3px;
+		}
+		#div_text_input > a {
+			position: absolute;
+			top: 16px;
+			right: 45px;
+		}
+		#div_text_input > a > img {
+			margin-top: 3px;
+			width: 22px;
+		}
+		#div_change_confirm {
+			display: flex;
+			column-gap: 10px;
+			justify-content: center;
+			padding: 10px 0 0;
+		}
+		#div_change_confirm > button {
+			display: block;
+			padding: 12px 40px 13px;
+			font-size: 14px;
+			text-align: center;
+			font-weight: 500;
+			border-radius: 24px;
+			line-height: 1;
+		}
+		#div_change_confirm > button:nth-child(1) {
+			background: #fff;
+			border: 1px solid #e1e1e1;
+			color: #191919;
+		}
+		#div_change_confirm > button:nth-child(2) {
+			background: #ea4329;
+			border: 1px solid #ea4329;
+			color: #fff;
+		}

@@ -1,0 +1,222 @@
+@charset "UTF-8";
+		.main_cont_wrap{
+			min-height: 560px;
+			position: relative;
+		}
+		#div_store_body {
+			border-top: 1px solid #ccc;
+			min-height: 400px;
+			padding: 0 0 80px 0;
+		}
+		#div_store_location_wrap {
+			width: 100%;
+			border-bottom: 1px solid #ededed;
+		}
+		#div_store_location_content {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#div_store_location_content > span {
+			display: block;
+			padding: 12px 0 12px 0;
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a {
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a:hover {
+			text-decoration: underline;
+		}
+		#div_store_qna {
+			padding: 45px 0 0 0;
+			margin: 0 auto;
+			width: 1200px;
+		}
+		#div_store_qna_panel {
+			width: 920px;
+			padding: 0 0 0 40px;
+			min-height: 500px;
+		}
+		#div_store_qna_content > #div_store_qna_title > div {
+			margin: 0 0 10px 0;
+			padding: 0 0 10px 0;
+			font-size: 24px;
+			font-weight: 500;
+		}
+		#table_board {
+			box-sizing: content-box;
+			width: 910px;
+			margin: 0 10px 20px 0;
+			border: 0;
+			border-spacing: 0;
+			border-collapse: collapse;
+			border-top: 1px solid #999;
+		}
+		#table_board > tbody > tr > th {
+			padding: 15px 0 11px 25px;
+			font-weight: 600;
+			border-bottom: 1px solid #dbdbdb;
+			background: #fbfbfb;
+			text-align: left;
+			vertical-align: top;
+			font-size: 12px;
+			line-height: 1.5;
+			color: #333;
+		}
+		#table_board > tbody > tr > td {
+			height: 32px;
+			padding: 7px 0 7px 15px;
+			border-bottom: 1px solid #dbdbdb;
+			background: #fff;
+			font-size: 12px;
+			line-height: 1.5;
+			color: #333;
+		}
+		#table_board > tbody > tr:nth-child(1) > td > #cs_category {
+			width: 127px;
+			height: 31px;
+			color: #717171;
+			font-size: 12px;
+			line-height: 1.5;
+			outline: none;
+		}
+		#table_board > tbody > tr > td > input {
+			padding: 0 10px;
+			width: 312px;
+			height: 33px;
+			color: #333;
+			border: 1px solid #d6d6d6;
+			line-height: 33px;
+			border-radius: 4px;
+		}
+		#table_board > tbody > tr > td input:focus {
+			outline: none;
+		}
+		#table_board > tbody > tr:nth-child(3) > td > input {
+			width: 90%;
+		}
+		#table_board > tbody > tr:nth-child(4) > td > #email_domain {
+			width: 115px;
+			height: 31px;
+			color: #717171;
+			outline: none;
+			font-size: 12px;
+			line-height: 1.5;
+			border: 1px solid #d0d0d0;
+			margin-left: 3px;
+			padding: 5px;
+		}
+		#table_board > tbody > tr > td > #div_file_upload {
+			display: flex;
+		}
+		#table_board > tbody > tr > td > #div_file_upload > #input_file {
+			width: 230px;
+			height: 33px;
+			color: #333;
+			border: 1px solid #d6d6d6;
+			line-height: 33px;
+			border-radius: 4px;
+			margin-right: 5px;
+		}
+		#table_board > tbody > tr > td > #div_file_upload > #div_file_upload_button {
+			display: flex;
+			align-items: center;
+		}
+		#div_file_upload_button > button {
+			height: 33px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#div_file_upload_button > button:first-child {
+			width: 70px;
+			color: #fff;
+			border: 0;
+			background: #979797;
+		}
+		#div_file_upload_button > button:last-child {
+			display: inline-block;
+			margin-left: 6px;
+			width: 62px;
+			height: 33px;
+			background: url("https://shop.10000recipe.com/data/skin/front/moment/img/common/btn/btn_gray_bg.png") repeat-x;
+			background-position: 0 -140px;
+			border: 1px solid #dbdbdb;
+		}
+		#div_file_upload_button > button:last-child:hover {
+			background: #eee;
+		}
+		#table_board > tbody > tr > td > #div_capcha {
+			margin: 10px 0;
+			padding: 10px 0;
+			display: flex;
+		}
+		#div_capcha > #div_capcha_img {
+			display: flex;
+			width: 304px;
+			height: 106px;
+			border: 1px solid #d6d6d6;
+			justify-content: center;
+			align-items: center;
+		}
+		#div_capcha > #div_capcha_text {
+			padding-left: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+		#div_capcha_text > div {
+			margin-bottom: 10px;
+		}
+		#div_capcha_text > input {
+			padding: 0 10px;
+			width: 168px;
+			height: 33px;
+			color: #333;
+			border: 1px solid #d6d6d6;
+			line-height: 33px;
+			border-radius: 4px;
+		}
+		#div_capcha_text > button {
+			display: inline-block;
+			width: 130px;
+			height: 26px;
+			margin-top: 10px;
+			background: #efefef;
+			border: 1px solid #dbdbdb;
+		}
+		#div_capcha_text > button > span {
+			display: inline-block;
+			font-size: 12px;
+			color: #777;
+			padding-bottom: 5px;
+		}
+		#div_store_qna_button {
+			margin-top: 30px;
+			text-align: center;
+		}
+		#div_store_qna_button > button {
+			display: inline-block;
+			width: 90px;
+			height: 42px;
+			text-align: center;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 600;
+		}
+		#div_store_qna_button > button:first-child {
+			color: #3e3d3c;
+			border: 1px solid #ccc;
+			background: #fff;
+			margin-left: 40px;
+		}
+		#div_store_qna_button > button:last-child {
+			color: #fff;
+			border: 1px solid #46AE4F;
+			background: #46AE4F;
+			margin-left: 10px;
+		}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(도움말) */
+		#div_panel {
+			margin-bottom: 20px;
+		}
+		#div_panel .cs_content {
+			margin-bottom: 0;
+		}
+		#div_panel .cs_post_header {
+			background: #fff;
+			border-color: #e6e7e8;
+			border-bottom: 0;
+			padding: 18px 30px 24px;
+			border-left: 1px solid #e6e7e8;
+			border-right: 1px solid #e6e7e8;
+		}
+		#div_panel .cs_post_header div {
+			color: #333;
+			font-size: 24px;
+		}
+		#div_panel .cs_post_header div i.btn_arrow {
+			float: right;
+			margin: 10px 10px 10px 0;
+		}
+		#div_panel .cs_post_header span.date {
+			font-size: 15px;
+			color: #999;
+			display: block;
+		}
+		#div_panel .cs_post_body:before {
+			display: table;
+			content: " ";
+		}
+		#div_panel .cs_post_body {
+			border-top: 1px solid #e6e7e8;
+			border-left: 1px solid #e6e7e8;
+			border-right: 1px solid #e6e7e8;
+			padding: 30px 50px 40px;
+			font_size: 16px;
+			line-height: 25px;
+			display: none;
+		}
+		#div_panel .cs_post_body:after {
+			clear: both;
+			display: table;
+			content: " ";
+		}
+		.blank_space {
+			background: #f1f1f2;
+			height:10px;
+			border-top: 1px solid #e6e7e8;
+			border-bottom: 1px solid #e6e7e8;
+			clear: both;
+		}
+/* 임시 보존 */
+		.cs_guide {
+			margin: 15px 24px 8px;
+			padding: 12px 2px;
+		}
+		.cs_guide span {
+			background: url("https://recipe1.ezmember.co.kr/img/icon_talk.gif") left top no-repeat;
+			padding: 0 0 0 24px;
+			color: #777;
+		}

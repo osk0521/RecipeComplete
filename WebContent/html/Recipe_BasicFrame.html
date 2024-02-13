@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>요리를 즐겁게~ 만개의 레시피</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		body {
+			min-width: 1240px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #333;
+			background: #f1f1f2;
+		}
+		a {
+			color: #333;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		img {
+			vertical-align: middle;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		.border {
+			border: 1px solid red;
+		}
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		#div_header {
+			position: relative;
+			background: #fff;
+			width: 100%;
+			height: 112px;
+		}
+		#div_header > div:nth-child(1) {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 16px 0 0 176px;
+		}
+		#div_header > div:nth-child(1) > div {
+			display: inline-block;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(1) {
+			margin: 0 30px 0 0;
+			vertical-align: top;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(2) {
+			width: 450px;
+			padding-top: 12px;			
+		}
+		#div_header > div:nth-child(2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1000px;
+		}
+		#div_header > div:nth-child(3) {
+			position: absolute;
+			top: 0;
+			left: 110px;
+			z-index: 1000px;
+		}
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+		    font-family: 'Glyphicons Halflings';
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 1;
+		}
+		#div_input_group {
+			position: relative;
+			display: table;
+			border-collaspe: separate;
+		}
+		#div_input_group > input {
+			border: 1px solid #ccc;
+			background: #fbfbfb;
+			height: 38px;
+			display: table-cell;
+			position: relative;
+			z-index: 2;
+			float: left;
+			width: 100%;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #555;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#div_input_group span {
+			position: relative;
+			white-space: nowrap;
+			width: 1%;
+			color: #fff;
+			font-size: 22px;
+			vertical-align: middle;
+			display: table-cell;
+		}
+		#div_input_group > span > button {
+			border-radius: 4px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			background: #74b243;
+			border: 1px solid #68a13a;
+			height: 38px;
+			margin: 0 0 2px -2px;
+			position: relative;
+			cursor: pointer;
+			margin-left: -1px;
+			padding: 6px 20px;
+			display: inline-block;
+		}
+		.glyphicon-search:before {
+			content: "\e003";
+		}
+		#div_header_button {
+			display: inline-block;
+			padding: 16px 0 0 50px;
+			vertical-align: top;
+			position: relative;
+			margin: 0 0 10px;
+		}
+		#div_header_button > div {
+			padding: 0 3px;
+		}
+		#div_header_button > div:nth-child(1) > a > img {
+			display: inline-block;
+			width: 44px;
+		}
+		#div_header_button > div:nth-child(3) {
+			margin-left: 50px;
+		}
+		#div_menubar {
+			background: url("https://recipe1.ezmember.co.kr/img/gnb_bg.gif") left top repeat-x;
+			height: 46px;
+			width: 100%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			margin-bottom: 16px;
+		}
+		#div_menu_content {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 9px 30px 0;
+			text-align: center;
+		}
+		.div_menu_button {
+			float: left;
+			padding: 0;
+			width: 235px;
+			height: 25px;
+		}
+		.div_menu_button a {
+			display: block;
+			font-size: 18px;
+			font-weight: 600px;
+			margin: 0 8px;
+			color: #fff;
+			text-decoration: none;
+		}
+		.div_menu_button a:hover {
+			color: #ffff00;
+		}
+		.div_menu_button a span.glyphicon {
+			font-size: 14px;
+			margin: -2px 0 0 0px;
+		}
+		.glyphicon-menu-down::before {
+			content: "\e259";
+		}
+/*---------- header ----------*/
+		/* 여기에 body부분 넣으세요 */
+/*---------- body ----------*/
+		#div_recent_recipe_panel {
+			width: 1240px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content {
+			margin-top: 44px;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content > h3 {
+			margin: 20px 0 10px 20px;
+			font-size: 24px;
+			font-weight: normal;
+			color: #000;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content > #div_recent_recipe_body {
+			display: flex;
+			margin: 22px 40px 0 40px;
+			padding-left: 6px;
+			position: relative;
+		}
+		.rr_list_button_previous {
+			position: absolute;
+			left: 7px;
+			top: 70px;
+			z-index: 100;
+		}
+		.rr_list_button_next {
+			position: absolute;
+			right: 13px;
+			top: 70px;
+			z-index: 100;
+		}
+		#div_recent_recipe_body > .recent_recipe {
+			width: 16.66666667%;
+		}
+		#div_recent_recipe_body > .recent_recipe > .rr_recipe_thumbnail {
+			display: block;
+			width: 180px;
+			height: 255px;
+			border-radius: 0;
+			padding: 0;
+			background-color: #fff;
+			margin-bottom: 20px;
+			line-height: 1.42857143;
+			text-decoration: none;
+			border: 1px solid #ddd;
+		}
+		.rr_recipe_thumbnail_img{
+			display: block;
+			width: 180px;
+			height: 180px;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.rr_recipe_title {
+			padding: 9px;
+			color: #333;
+			font-size: 14px;
+		}
+		#footer1 {
+			display: flex;
+			background: #fff;
+			color: #999;
+			padding: 2px 0 5px 0;
+			margin-top: 30px;
+			border-top: 1px solid #dcdcdc;
+		}
+		#footer1_panel {
+			display: flex;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#footer1_panel > #footer1_content1 {
+			width: 440px;
+			padding:  26px 0 0 9px;
+		}
+		#footer1_content1 > .f_content1_link {
+			margin: 0;
+			padding-bottom: 16px;
+		}
+		#footer1_content1 > .f_content1_link a {
+			font-size: 13px;
+			color: #999;
+			text-decoration: none;
+			font-weight: 450;
+		}
+		#footer1_content1 > .f_content1_link span {
+			color: #ddd;
+			padding: 0 4px;
+		}
+		#footer1_content1 > .f_content1_info {
+			font-size: 13px;
+			line-height: 1.6;
+			margin-bottom: 16px;
+		}
+		#footer1_panel > #footer1_content2 {
+			width: 500px;
+			marging-right: 11px;
+			padding: 25px 0 0 0;
+		}
+		#footer1_content2 > #app_download {
+			display: block;
+			margin-bottom: 9px;
+		}
+		#footer1_content2 > #banner_sns {
+			display: flex;
+			padding-top: 20px;
+		}
+		#footer1_content2 > #banner_sns > a {
+			margin-bottom: 9px;
+		}
+		#footer1_panel > #footer1_content3 {
+			margin-right: 15px;
+			width: 300px;
+			padding: 28px 0 0 0;
+		}
+		#footer1_content3 > #f_customer_send {
+			width: 300px;
+			height: 150px;
+			font-size: 13px;
+			background: #f5f5f5;
+			border: 1px solid #e6e7e8;
+			display: block;
+			padding: 6px 12px;
+			line-height: 1.42857143;
+			color: #555;
+			border-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#footer1_content3 > #f_customer_send::placeholder {
+			color: #aaa;
+		}
+		#footer1_content3 > #f_send_cs_button {
+			display: inline-block;
+			border: 1px solid #dcdcdc;
+			background: #fff;
+			border-radius: 0;
+			color: #444;
+			width: 300px;
+			margin: 8px 0 0 -1px;
+			padding: 6px 20px;
+			font-size: 14px;
+			font-weight: 400;
+			cursor: pointer;
+			user-select: none;
+		}
+		#footer1_content3 > #f_cs_notice {
+			margin: 0;
+			padding: 10px 0 0 0;
+			text-align: center;
+			width: 300px;
+			font-size: 13px;
+			font-weight: 500;
+			color: #999;
+		}
+		#footer2 {
+			background: #289f5d;
+			margin-top: 0;
+			border-top: none;
+			padding: 2px 0 5px 0;
+		}
+		#footer2 > #footer2_panel {
+			display: flex;
+			padding: 18px 0 18px 40px;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#footer2_panel > #f2_logo {
+			margin: auto 0;
+		}
+		#footer2_panel > #f2_all_count {
+			display: flex;
+			background: url("https://recipe1.ezmember.co.kr/img/btm_line.png") 32px 24px no-repeat;
+			vertical-align: middle;
+			padding-left: 7px;
+			margin: 0 0 10px 22px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box {
+			text-align: center;
+			color: #fff;
+			font-size: 12px;
+			width: 160px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > a {
+			color: #fff;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > a > span {
+			width: 100%;
+			height: 66px;
+			display: block;
+			margin-bottom: 6px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > b {
+			color: #fbff51;
+			display: block;
+			font-size: 18px;
+			font-weight: normal;
+			margin-top: 4px;
+		}
+		#footer2_panel > #f2_send_mail {
+		    background: url("https://recipe1.ezmember.co.kr/img/btm_img1.png") left top no-repeat;
+		    padding: 12px 0 0 108px;
+		    margin: 10px;
+		}
+		#footer2 > #footer2_Since {
+			background: #fff;
+			text-align: center;
+			padding: 16px 0;
+			margin-bottom: -10px;
+		}
+/*---------- footer ----------*/
+	</style>
+</head>
+<body>
+	<div id="div_header">
+		<div id="div_header_inner">
+			<div id="div_logo_image">
+				<a href="https://www.10000recipe.com/index.html">
+					<img src="https://recipe1.ezmember.co.kr/img/logo4.png"/>
+				</a>
+			</div>
+			<div id="div_search_bar">
+				<form id="searchRecipe">
+					<div id="div_input_group">
+						<input type="text" id="searchText"/>
+						<span>
+							<button id="search_button" type="button">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div id="div_header_button">
+				<div id="div_login_button" class="fl">
+					<a href="Login.html">
+						<img src="https://recipe1.ezmember.co.kr/img/ico_user.png"/>
+					</a>
+				</div>
+				<div id="div_recipeWrite_button" class="fl">
+					<img src="https://recipe1.ezmember.co.kr/img/tmn_write.png"/>
+				</div>
+				<div id="div_store_button" class="fl">
+					<img src="https://recipe1.ezmember.co.kr/img/tmn_store2.png"/>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="div_partner1">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web1.png?v.2"/>
+		</div>
+		<div id="div_partner2">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web2.png?v.2"/>
+		</div>
+	</div>
+	<div id="div_menubar">
+		<div id="div_menu_content">
+			<div class="div_menu_button">
+				<a href="#">추천</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">분류</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">랭킹</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">매거진</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">더보기
+					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+				</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+<!------------ header ------------>
+	<!-- 여기에 몸통부분 넣으세요 -->
+<!------------ body ------------>
+	<div id="div_recent_recipe_panel">
+		<div id="div_recent_recipe_content">
+			<h3>최근 본 레시피</h3>
+			<div id="div_recent_recipe_body">
+				<a href="#" class="rr_list_button_previous">
+					<img src="https://recipe1.ezmember.co.kr/img/btn_arrow1_l.png" alt="이전"/>
+				</a>
+				<a href="#" class="rr_list_button_next">
+					<img src="https://recipe1.ezmember.co.kr/img/btn_arrow1_r.png" alt="다음"/>
+				</a>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/04/14/67b39b7159fa14c51042fe0674e7399f1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">기름 없이 볶아 다이어트에 좋은 중국식 청경채 돼지...</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/30/16fc5e69d9c7624353361f4a65f4752a1_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">실패는없다!백종원 냉국레시피!...</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/10/07/da4e0452ac3bd20bb0528f4abc1211881_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">꿀마늘 닭강정(아이들 단골메뉴 찜♡♡)...</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/22/209d1b0860d71c45978f804721f107f71_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">아이들이 좋아하는 초간단 간식, 퐁크러쉬 쉐이크 레...</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/05/21/52ec68320e673157a36e0bdce94f89561_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">에어프라이어 소시지 피자...</div>
+					</a>
+				</div>
+				<div class="recent_recipe">
+					<a class="rr_recipe_thumbnail">
+						<img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/05/05/f898a7e9e03e179c2c6b7ad65fd946321_m.jpg" class="rr_recipe_thumbnail_img"/>
+						<div class="rr_recipe_title">차돌박이 파스타 </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer1">
+		<div id="footer1_panel">
+			<div id="footer1_content1">
+				<p class="f_content1_link">
+					<a>회사소개</a>
+					<span>|</span>
+					<a>광고문의</a>
+					<span>|</span>
+					<a>개인정보처리방침</a>
+					<span>|</span>
+					<a>이용약관</a>
+					<span>|</span>
+					<a>고객센터</a>
+				</p>
+				<p class="f_content1_info">
+					대표 : 이인경 / E : help@10000recipe.com / F : 02) 323-5049 <br/>
+					서울 금천구 가산동 371-50 에이스하이엔드타워 3차 1106-1호 <br/>
+					문의전화(운영시간 평일 10:00~18:00)<br/>
+					쇼핑문의(만개스토어) : 02-6953-4433<br/>
+					서비스 이용문의 : 070-4896-6416 
+				</p>
+				<p class="f_content1_info">
+					(주)만개의레시피 / 사업자등록번호 291-81-02485 / 통신판매업신고 2022-서울금천-3089 / 벤처기업확인 / <a href="#" target="_self" style="color:#999; font-size:13px">사업자정보확인</a> <br>
+					서울지방중소기업청 제 031134233-1-01643호
+				</p>
+				<p class="f_content1_info">
+					Copyright <b style="font-size:13px;">만개의레시피</b> Inc. All Rights Reserved
+				</p>
+			</div>
+			<div id="footer1_content2">
+				<a id="app_download">
+					<img src="https://recipe1.ezmember.co.kr/img/btm_app2.gif" alt="app다운로드"/>
+				</a>
+				<div id="banner_sns">
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_1.gif" alt="페이스북"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_2.gif" alt="인스타그램"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_3.gif" alt="유튜브"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_4_1.gif" alt="네이버블로그"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_5.gif" alt="네이버포스트"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_6.gif" alt="카카오TV"/>
+					</a>
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/btm_sns_7.gif" alt="카카오스토리"/>
+					</a>
+				</div>
+			</div>
+			<div id="footer1_content3">
+				<textarea id="f_customer_send" name="cs_txt" placeholder="불편사항이나 제안사항이 있으신가요?
+만개의레시피에 전하고 싶은 의견을 남겨주세요."></textarea>
+				<button type="button" id="f_send_cs_button">의견제출</button>
+				<p id="f_cs_notice">
+					개별회신을 원하시면 <a href="#" style="text-decoration:underline; color:#666; font-size:13px">여기</a>에 문의하세요.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer2">
+		<div id="footer2_panel">
+			<div id="f2_logo">
+				<img src="https://recipe1.ezmember.co.kr/img/logo6.png"/>
+			</div>
+			<div id="f2_all_count">
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon1.png) center no-repeat;"></span>
+						제휴업체수
+					</a>
+					<b>575</b>
+				</div>
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon2.png) center no-repeat;"></span>
+						총 쉐프수
+					</a>
+					<b>3,970</b>
+				</div>
+				<div class="div_count_box">
+					<a href="#">
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon3.png) center no-repeat;"></span>
+						총 레시피수
+					</a>
+					<b>210,881</b>
+				</div>
+				<div class="div_count_box">
+					<a>
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon4.png) center no-repeat;"></span>
+						월 방문자수
+					</a>
+					<b>5,140,000</b>
+				</div>
+				<div class="div_count_box">
+					<a>
+						<span style="background: url(//recipe1.ezmember.co.kr/img/btm_icon5.png) center no-repeat;"></span>
+						총 레시피 조회수
+					</a>
+					<b>2,875,362,521</b>
+				</div>
+			</div>
+			<div id="f2_send_mail">
+				<a>
+					<img src="https://recipe1.ezmember.co.kr/img/btm_img2.png"/>
+				</a>
+			</div>
+		</div>
+		<div id="footer2_Since">
+			<img src="https://recipe1.ezmember.co.kr/img/btm_since.png"/>
+		</div>
+	</div>
+<!------------ footer ------------>
+</body>
+</html>

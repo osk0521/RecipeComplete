@@ -1,0 +1,688 @@
+
+.sub_bg {
+	background: url(//recipe1.ezmember.co.kr/img/container_bg.gif) left top repeat-y;
+	position: relative;
+}
+.container {
+	position: relative;
+	width: 1240px;
+	padding: 0;
+	max-width: none !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+#contents_area_full {
+	border: 1px solid #e6e7e8;
+	padding: 0 0 20px 0;
+	background: #fff;
+	position: relative;
+}
+
+.searchRank {
+	margin-top: 30px;
+	padding: 0 22px;
+}
+
+.rcp_m_list2 {
+	margin-top: 30px;
+	padding: 0 22px;
+	width: 1194px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.search_word_object {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 1px;
+	font-size: 17px;
+	padding-bottom: 1px;
+	position: relative;
+	height: 52.075px;
+	width: 1194.4px;
+}
+
+.search_word_object > li {
+	background: #fff;
+	color: #666;
+	margin-bottom: -1px;
+	position: relative;
+	float: left;
+	line-height: 24.2857px;
+	/* width: 124.525px;
+	height: 51.875px; */
+	width: 125px;
+	height: 53px;
+	top:-2px;
+}
+.search_word_object > li.non-active > a{
+	border-bottom: inherit;
+}
+.search_word_object > li.rtype > a {
+	display: block;
+	text-align: center;
+	border : 1px solid transparent;
+	padding : 14px 38px;
+	border-bottom : none;
+	text-decoration: none;
+	margin-bottom: -2px;
+}
+.search_word_object > li.active > a {
+	background-color: #fff;
+	border-bottom: 1px solid #fff! important;
+	border: 1px solid #ccc;
+	cursor: default;
+	margin-bottom: -2px;
+	color: #000;
+	font-weight: 500;
+}
+li.non-active {
+	margin-bottom: 0;
+/* 	width: 108px;
+	height: 53px; */
+}
+.peroiod {
+	display: flex;
+	padding-bottom: 1px;
+	font-size: 15px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	align-items: flex-start;
+	flex-direction: row;
+	top: 0px;
+	z-index: 100;
+	position: absolute;
+	right:0;
+}
+
+
+.peroiod > li.ptype {
+	color: #999;
+	border: 1px solid #e0e0e0;
+	margin-bottom: -1px;
+	float: left;
+	width: 73.2px;
+	padding-right: 0.8px;
+}
+.peroiod > li.ptype > a {
+	line-height: 1.43;
+	padding: 6px 22px;
+	text-decoration: none;
+	position: relative;
+	display: block;	
+	height: 35.025px;
+	width: 73.2px;
+	border: 0.8px;
+}
+
+.peroiod>li.ptype.active>a {
+	cursor: default;
+	background-color: #44b6b5;
+	color: #fff;
+}
+.peroiod > li.non-active> a:hover {
+	cursor: default;
+	background: #f9f9f9;
+	color: #000;
+}
+
+.peroiod>li>a.active, .peroiod>li>a.active:focus, .period>li>a.active>a:hover{
+	cursor: default; 
+	background-color: #44b6b5; 
+ 	border-bottom-color: transparent; 
+	color: #fff;
+}
+.search_word>li {
+	float: left;
+	margin-bottom: -1px;
+	background: #fff;
+	color: #666;
+}
+
+.List {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	display: flex;
+	height: 54.281px;
+}
+
+/* from user.css
+ .List {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	display: flex;
+	height: 54.281px;
+}
+ */
+.List>li {
+	display: block;
+}
+
+/*검색어 랭킹*/
+
+ul.ranking_search_word {
+	overflow: hidden;
+	padding: 4px 20px 20px 88px;
+}
+
+ul.ranking_search_word > li {
+	margin-bottom: -1px;
+	position: relative;
+	display: block;
+	padding: 24px 6px;
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
+	width: 300px;
+	display: inline-block;
+	margin-right: 60px;
+	list-style: none;
+}
+ul.ranking_search_word > li > div{
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 16px;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;	
+}
+ul.ranking_search_word>li>a {
+	padding: 14px 38px;
+	border: 1px;
+	margin-bottom: -2px;
+}
+
+ul.ranking_search_word > li > div > p {
+	display:inline-block;
+	position: absolute;
+	background: #fff;
+	border: 1px solid #bbb;
+	-webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+	min-width: 36px;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 1;
+	padding: 8px 7px 10px;
+	letter-spacing: -0.03em;
+	vertical-align: unset;
+	margin-right: 18px;
+	margin-bottom: 0;
+}
+p.ranking_num.recipe, p.ranking_num.user {
+	position: absolute;
+	left: -4px;
+	top: -4px;
+	z-index: 100;
+}
+p.ranking_num > b {
+	font-size: 17px;
+	color: #333;
+}
+
+.ranking_searchWord .search_word_list {
+	overflow: hidden;
+	font-size: 16px;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	text-decoration: solid;
+	text-decoration-thickness: auto;
+	height: 37px;
+}
+
+.search_word_list>a {
+	margin-left: 56px;
+	height: 37px;
+}
+
+.common_sp_list_ul {
+	margin: 0;
+	vertical-align: top;
+}
+
+.common_sp_list_ul.ea4 li {
+	width: 282px;
+}
+
+.common_sp_list_ul.ea4_sm li {
+	width: 195px;
+	margin: 0 6px 40px;
+}
+/*레시피 랭킹*/
+	.rank_recipe_list > p {
+		position: absolute;
+	    z-index: 100;
+		background: #fff;
+		border: 1px solid #bbb;
+		-webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+		box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+		min-width: 36px;
+		text-align: center;
+		border-radius: 4px;
+		line-height: 1;
+		padding: 8px 7px 10px;
+		letter-spacing: -0.03em;
+		vertical-align: unset;
+		margin-right: 18px;
+		margin-bottom: 0;
+		top: -4px;
+		left: -4px;
+	}
+	ul.rank_recipe{
+		padding: 40px 0 0 8px;
+	}
+	
+	.rank_thumbnail{
+		position: relative;
+	    border-radius: 4px;
+	    overflow: hidden;
+	}
+	.rank_caption {
+		padding: 10px 2px;
+	}
+	.rank_caption_tit.line2 {
+	    margin: 0 0 6px 0;
+	    color: #000;
+	    text-align: left;
+	    font-size: 15px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    word-wrap: break-word;
+	    white-space: normal;
+	    line-height: 1.5;
+	}
+	.rank_thumbnail{
+	    position: relative;
+	    border-radius: 4px;
+	    overflow: hidden;
+	}
+	.rank_thumbnail>a>img {
+	    width: 282px;
+	    height: 282px;
+	}
+	.rank_caption_rv{
+	    line-height: 1;
+	    margin-bottom: 9px;
+	}
+	.rank_caption_rv_ea{
+		color: #999;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    font-size: 12px;
+	    vertical-align: bottom;
+	    padding: 0 1px 7px 0;
+	    font-weight: 300;
+	}
+	.rank_caption_rv_name {
+	    color: #999;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    font-size: 14px;
+	    vertical-align: bottom;
+	    padding: 0 1px 7px 0;
+	    font-weight: 300;
+	    display: inline-block;
+		vertical-align: bottom;
+	}
+	.rank_caption_rv_name > a > img{
+	    width: 22px;
+	    height: 22px;
+	    border-radius: 50%;
+	    margin: 0 4px -2px 0;
+	    vertical-align: text-bottom;
+	}
+	.caption_rv_star>img{
+		width: 14px;
+	}
+	.rank_caption_hits{
+		vertical-align: middle;
+		color: #999;
+		font-size: 13px;
+		margin-left: 2px;
+		font-weight: 300;
+	}
+	li.rank_recipe_list {
+		width: 282px;
+		list-style: none;
+	    padding: 0;
+	    margin: 0 12px 40px 0;
+	    display: inline-block;
+	    vertical-align: top;
+	    position: relative;
+	}
+	.common_vod_label{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		z-index: 10;
+	}
+/*유저 랭킹*/
+
+.ranker_user_list {
+	overflow: hidden;
+	padding: 16px 20px 10px 100px;
+}
+.ranker_user_list > li {
+	display: inline-block;
+	width: 110px;
+	margin: 2px 45px 24px;
+	vertical-align: top;
+}
+.ranker_user_thumbnail{
+	text-align: center;
+	
+}
+.ranker_user_thumbnail > a > img {
+	width: 100%;
+	border-radius: 50%;
+	border: 1px solid #dbdbdb;
+	margin: 0 auto;
+	position: relative;
+	height: 110px;
+}
+
+.ranker_user_list > li > div {
+	position: relative;
+}
+.ranker_user_nickname{
+	font-size: 16px;
+	padding: 8px 0 4px 0;
+	font-weight: 500;
+	text-align: center;
+}
+.ranker_user_list > li > div > p {
+	position: absolute;
+	left: -2%;
+	top: -2%;
+	z-index: 100;
+	background: #fff;
+	border: 1px solid #bbb;
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+	min-width: 36px;
+	text-align: center;
+	border-radius: 4px;
+	line-height: 1;
+	padding: 8px 7px 10px;
+	letter-spacing: -0.03em;
+	vertical-align: unset;
+}
+
+.row{
+	padding-top: 40px;
+	margin: 0 -4px 0 -4px;
+}
+.ranking_searchWord{
+	width: 1198px;
+}
+
+
+/*---------- body ----------*/
+#div_recent_recipe_panel {
+	width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#div_recent_recipe_panel>#div_recent_recipe_content {
+	margin-top: 44px;
+}
+
+#div_recent_recipe_panel>#div_recent_recipe_content>h3 {
+	margin: 20px 0 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000;
+}
+
+#div_recent_recipe_panel>#div_recent_recipe_content>#div_recent_recipe_body
+	{
+	display: flex;
+	margin: 22px 40px 0 40px;
+	padding-left: 6px;
+	position: relative;
+}
+
+.rr_list_button_previous {
+	position: absolute;
+	left: 7px;
+	top: 70px;
+	z-index: 100;
+}
+
+.rr_list_button_next {
+	position: absolute;
+	right: 13px;
+	top: 70px;
+	z-index: 100;
+}
+
+#div_recent_recipe_body>.recent_recipe {
+	width: 16.66666667%;
+}
+
+#div_recent_recipe_body>.recent_recipe>.rr_recipe_thumbnail {
+	display: block;
+	width: 180px;
+	height: 255px;
+	border-radius: 0;
+	padding: 0;
+	background-color: #fff;
+	margin-bottom: 20px;
+	line-height: 1.42857143;
+	text-decoration: none;
+	border: 1px solid #ddd;
+}
+
+.rr_recipe_thumbnail_img {
+	display: block;
+	width: 180px;
+	height: 180px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.rr_recipe_title {
+	padding: 9px;
+	color: #333;
+	font-size: 14px;
+}
+
+#footer1 {
+	display: flex;
+	background: #fff;
+	color: #999;
+	padding: 2px 0 5px 0;
+	margin-top: 30px;
+	border-top: 1px solid #dcdcdc;
+}
+
+#footer1_panel {
+	display: flex;
+	width: 1240px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#footer1_panel>#footer1_content1 {
+	width: 440px;
+	padding: 26px 0 0 9px;
+}
+
+#footer1_content1>.f_content1_link {
+	margin: 0;
+	padding-bottom: 16px;
+}
+
+#footer1_content1>.f_content1_link a {
+	font-size: 13px;
+	color: #999;
+	text-decoration: none;
+	font-weight: 450;
+}
+
+#footer1_content1>.f_content1_link span {
+	color: #ddd;
+	padding: 0 4px;
+}
+
+#footer1_content1>.f_content1_info {
+	font-size: 13px;
+	line-height: 1.6;
+	margin-bottom: 16px;
+}
+
+#footer1_panel>#footer1_content2 {
+	width: 500px;
+	marging-right: 11px;
+	padding: 25px 0 0 0;
+}
+
+#footer1_content2>#app_download {
+	display: block;
+	margin-bottom: 9px;
+}
+
+#footer1_content2>#banner_sns {
+	display: flex;
+	padding-top: 20px;
+}
+
+#footer1_content2>#banner_sns>a {
+	margin-bottom: 9px;
+}
+
+#footer1_panel>#footer1_content3 {
+	margin-right: 15px;
+	width: 300px;
+	padding: 28px 0 0 0;
+}
+
+#footer1_content3>#f_customer_send {
+	width: 300px;
+	height: 150px;
+	font-size: 13px;
+	background: #f5f5f5;
+	border: 1px solid #e6e7e8;
+	display: block;
+	padding: 6px 12px;
+	line-height: 1.42857143;
+	color: #555;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#footer1_content3>#f_customer_send::placeholder {
+	color: #aaa;
+}
+
+#footer1_content3>#f_send_cs_button {
+	display: inline-block;
+	border: 1px solid #dcdcdc;
+	background: #fff;
+	border-radius: 0;
+	color: #444;
+	width: 300px;
+	margin: 8px 0 0 -1px;
+	padding: 6px 20px;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	user-select: none;
+}
+
+#footer1_content3>#f_cs_notice {
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	width: 300px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #999;
+}
+
+#footer2 {
+	background: #289f5d;
+	margin-top: 0;
+	border-top: none;
+	padding: 2px 0 5px 0;
+}
+
+#footer2>#footer2_panel {
+	display: flex;
+	padding: 18px 0 18px 40px;
+	width: 1240px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#footer2_panel>#f2_logo {
+	margin: auto 0;
+}
+
+#footer2_panel>#f2_all_count {
+	display: flex;
+	background: url("https://recipe1.ezmember.co.kr/img/btm_line.png") 32px
+		24px no-repeat;
+	vertical-align: middle;
+	padding-left: 7px;
+	margin: 0 0 10px 22px;
+}
+
+#footer2_panel>#f2_all_count>.div_count_box {
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	width: 160px;
+}
+
+#footer2_panel>#f2_all_count>.div_count_box>a {
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#footer2_panel>#f2_all_count>.div_count_box>a>span {
+	width: 100%;
+	height: 66px;
+	display: block;
+	margin-bottom: 6px;
+}
+
+#footer2_panel>#f2_all_count>.div_count_box>b {
+	color: #fbff51;
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 4px;
+}
+
+#footer2_panel>#f2_send_mail {
+	background: url("https://recipe1.ezmember.co.kr/img/btm_img1.png") left
+		top no-repeat;
+	padding: 12px 0 0 108px;
+	margin: 10px;
+}
+
+#footer2>#footer2_Since {
+	background: #fff;
+	text-align: center;
+	padding: 16px 0;
+	margin-bottom: -10px;
+}
+
+/*---------- footer ----------*/

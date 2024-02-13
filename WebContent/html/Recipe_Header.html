@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>만개의레시피 헤더</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="../Recipe_CSS/Public/Recipe_Header.css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script src="../js/Recipe_Header.js"></script>
+</head>
+<body>
+<!-- 페이지 최상단 -->
+	<div id="div_header">
+		<div id="div_header_inner">
+			<div id="div_logo_image">
+				<a href="https://www.10000recipe.com/index.html">
+					<img src="https://recipe1.ezmember.co.kr/img/logo4.png"/>
+				</a>
+			</div>
+			<div id="div_search_bar">
+				<form id="searchRecipe">
+					<div id="div_input_group">
+						<input type="text" id="searchText"/>
+						<span>
+							<button id="search_button" type="button">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+			<div id="div_header_button">
+				<div id="div_login_button" class="fl">
+					<a>
+						<img src="https://recipe1.ezmember.co.kr/img/ico_user.png"/>
+					</a>
+					<div id="div_user_mybutton">
+						<p id="p_layer_top"></p>
+						<p id="p_layer_middle">
+							<a href="">MY홈</a>
+                            <a href="">팔로우 레시피</a>
+                            <a href="">레시피 노트</a>
+                            <a href="">문의내역</a>
+                            <a href="">로그아웃</a>
+						</p>
+						<p id="p_layer_bottom"></p>
+					</div>
+				</div>
+				<div id="div_recipeWrite_button" class="fl">
+					<a href="">
+						<img src="https://recipe1.ezmember.co.kr/img/tmn_write.png"/>
+					</a>
+				</div>
+				<div id="div_store_button" class="fl">
+					<a href="">
+						<img src="https://recipe1.ezmember.co.kr/img/tmn_store2.png"/>
+					</a>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div id="div_partner1">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web1.png?v.2"/>
+		</div>
+		<div id="div_partner2">
+			<img src="https://recipe1.ezmember.co.kr/img/partners/banner_web2.png?v.2"/>
+		</div>
+	</div>
+<!-- /페이지 최상단 -->
+<!-- 페이지 상단 메뉴바 -->
+	<div id="div_menubar">
+		<div id="div_menu_content">
+			<div class="div_menu_button">
+				<a href="#">추천</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">분류</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">랭킹</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">매거진</a>
+			</div>
+			<div class="div_menu_button">
+				<a href="#">더보기
+					<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+				</a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+<!-- /페이지 상단 메뉴바 -->
+<!------------ header ------------>
+</body>
+</html>

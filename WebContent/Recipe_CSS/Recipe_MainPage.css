@@ -1,0 +1,750 @@
+@charset "UTF-8";
+	li{
+		list-style: none;
+	}
+	#div_partner1, #div_partner2{
+		display:none;
+	} 
+	nav {
+		width: 320px;
+		height: 320px;
+		float: left;
+		margin-left: 0px;
+		position: sticky;
+		left: 5px;
+		top: 60px;
+	}
+	nav > table{
+		width: 320px;
+		height: 320px;
+		color: white;
+	}
+	td.now{
+		padding: 5px 0 5px 20px;
+		background-color:#64a70a; 
+		font-size: 17px;
+	}
+	td.notnow{
+		padding: 5px 0 5px 20px;
+		background-color:#b1e67c;
+		font-size: 17px;
+	}
+	td.now > a, td.notnow > a{
+		color: white;
+	}
+	td.notnow >a:hover, td.now>a:hover{
+		font-weight: bold;
+		color: #ffff00;
+	}
+	aside{
+		width: 320px;
+		height: 320px;
+		float: right;
+		position: sticky;
+		right: 0;
+		top: 62px;
+		background-color: #dfe0de;
+	}
+	aside > span{
+		display: flex;
+		justify-content: space-around;
+	}
+	canvas{
+		display: inline-block;
+		box-sizing: border-box;
+		height: 295px;
+		width: 310px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+		background-color: white !important;
+	}
+	#chart-container {
+		width: 320px;
+		height: 320px;
+	}
+    .container {
+		font-size: 14px;
+		color: #333;
+		line-height: 1.43;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		width: 1240px;
+		height: auto;
+		text-align: center;
+		margin: 0 auto;;
+		position: relative;
+		text-align: center;
+		padding: 0;
+    }
+    .exhibition_box {
+		padding: 0;
+		margin: 0 auto;
+		width: 1150px;
+    }
+    
+	.exhibition_box > .slick-arrow, .UserList > .slick-arrow {
+		margin-top: 26px;
+		width: 27px;
+		height: 42px;
+		padding: 1px 6px;
+	}
+	.exhibition_box > .slick-next,  .UserList > .slick-next{
+		background-repeat: no-repeat!important;
+		background-size: 15px 42px!important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_next.png?v.1");
+	}
+	.exhibition_box > .slick-next{
+		right: -25px;
+	}
+	.exhibition_box > .slick-prev,  .UserList > .slick-prev{
+		background-repeat: no-repeat!important;
+		background-size: 15px 42px !important;
+		background:url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_pre.png?v.1");
+	}
+    .main_page_slide.top {
+		width: 1240px;
+		margin: 0 auto; 
+		background: #fff;
+		border: 1px solid #e9e9e9;
+		padding: 28px 0;
+		margin-bottom: 8px;
+		text-align: center;
+    }
+
+    .main_page_slide {
+		float: left;
+		position: relative;
+		width: 1240px;
+		background: #fff;
+		border: 0.8px solid #e9e9e9;
+		padding: 28px 25px 24px 25px;
+		margin-bottom: 8px;
+		line-height: 20px;
+		display: block;
+		font-size: 14px;
+    }
+
+    .main_page_slide > dt {
+    	height: 33.6px;
+		padding: 0 54px;
+		margin-bottom: 20px;
+    }
+    
+    .main_page_slide > dt > h3{
+		float: left;
+		color: #000;
+		display: inline-block;
+		margin: 0;
+		font-weight: normal;
+    }
+	#green_keyword {
+		color: #64a70a;
+	}
+
+    .main_page_slide > dd {
+    	overflow: hidden;
+		position: relative;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
+    }
+	
+    .manager_btn{
+		padding: 5px 0 5px;
+		margin-bottom: 5px;
+		background: #fff;
+		display: inline-flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 1240px;
+    }
+ 	.manager{
+		display: none;
+	}
+	.edit, .onedit{
+		float: right;
+		padding: 8px 16px 8px 16px !important;
+		position: relative;
+		border: 1px solid #d6c1aa;
+		color: #b99773;
+		font-size: 15px;
+		padding: 5px 8px;
+		float: right;
+	}
+	a.edit{
+		visibility: hidden;
+	}
+    .home_cont_r2{
+		float: right;
+		padding: 8px 0 0 0;
+		position: relative;
+    }
+	
+    .btn_more {
+		border: 1px solid #d6c1aa;
+		color: #b99773;
+		font-size: 13px;
+		padding: 5px 8px;
+		float: right;
+    }
+    
+    .btn_more:hover {
+    	color: #b99773;
+    }
+    .home_cont > dd > ul,
+    .home_cont > dd > li {
+		list-style: none;
+		padding: 0;
+    }
+    #event_item_list {
+		position: relative;
+		width: 1122px;
+		overflow: hidden;
+    }
+    #event_item_list div {
+    	width: 360px;
+    	height: 115px;
+    }
+	.cate_cont{
+		width: 1100px;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		margin-left:1px;
+	}
+
+    dd.content_main {
+		float: left;
+    }
+    li.list_item {
+		width: 204px;
+		height: 321px;
+		display: inline-block;
+		margin-right: 12px;
+		position: relative;
+		text-align: left;
+		line-height: 20px;
+		vertical-align: top;
+    }
+
+    div.product_thumbnail {
+		position: relative;
+		overflow: hidden;
+		width: 206px;
+		height: 206px;
+    }
+
+    .icon_free {
+		width: 67.5312px;
+		height: 26px;
+		padding: 6px 8px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.4);
+		color: white;
+		line-height: 1;
+		border-radius: 4px;
+    }
+
+    dt.content_title {
+		width: 1080px;
+		height: 33.594px;
+		margin-bottom: 20px;
+		padding: 0px 54px;
+    }
+
+    .caption {
+		padding: 10px 2px;
+    }
+
+    .caption_tit {
+		margin: 0 0 6px 0;
+		color: #000;
+		text-align: left;
+		font-size: 15px;
+    }
+
+    .caption_tit.line2 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		word-wrap: break-word;
+		white-space: normal;
+		line-height: 1.5;
+    }
+
+    .caption_tit.rv {
+		font-weight: normal;
+    }
+
+    .caption_name {
+		padding: 6px 2px 0 0;
+		color: #666;
+		vertical-align: middle;
+		font-size: 13px;
+    }
+
+    .caption_name_pic {
+		margin: 0;
+    }
+
+    .caption_name_pic > img {
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		margin-right: 4px;
+    }
+
+    .caption_rv {
+		vertical-align: super;
+		line-height: 1;
+	    /* margin: 0 0 9px 0; */
+		display: inline-flex;
+		justify-content: space-evenly;
+		align-items: center;
+    }
+
+    .caption_rv_star {
+		vertical-align: 1px;
+		display: flex;
+		
+    }
+
+    .caption_rv_star > img {
+		width: 14px;
+		margin-right: 1px;
+		margin: 0;
+    }
+
+    .price_box {
+		padding: 0;
+		margin: 0 0 4px 0;
+		line-height: 1;
+    }
+
+    .price {
+		font-size: 20px;
+		color: #000;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		font-family: 'Montserrat';
+		font-size: 16px;
+		margin-left: 1px;
+    }
+    .caption_buyer {
+		color: #999;
+		font-size: 13px;
+		margin-left: 2px;
+		font-weight: 300;
+    }
+
+    .caption_rv_hits {
+		color: #999;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: 12px;
+		vertical-align: middle;
+		padding-left: 1px;
+		line-height: normal;
+		font-weight: 300;
+		padding-left: 5px;
+    }
+
+    .caption_pdt {
+		vertical-align: middle;
+		line-height: 1;
+		margin-top: -2px;
+    }
+
+    .caption_pdt > img {
+		width: 21px;
+		margin-right: 2px;
+		-webkit-filter: grayscale(100%);
+		filter: gray;
+		vertical-align: -6px;
+    }
+    .caption_rv_img {
+		display: table-cell;
+		vertical-align: top;
+		padding: 0 0 0 6px;
+    }
+
+    .caption_rv_img > img {
+		border-radius: 3px;
+    }
+    /*쇼핑*/
+	.ul_shopping_best{
+		width: 1100px;
+		text-align:left;
+		padding-left:10px;
+	}
+	.ul_shopping_best > .slick-list{
+		margin: 0 2px;
+		padding: 0px;	
+	}
+	.ul_shopping_best > .slick-list > .slick-track > .slick-active{
+		margin: 0 12px 0 0;
+		
+	}
+	.ul_shopping_best > .slick-arrow {
+		padding: 1px 6px;
+		height: 80px;
+		width: 40px;
+		top: 119px;
+	}
+	.ul_shopping_best > .slick-list > .slick-track > .slick-slide{
+		margin: 0 7px;
+	}
+	.ul_shopping_best > .slick-prev {
+		background-size: 28px 78px !important;
+		background-repeat: no-repeat !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_pre.png?v.4");
+		left:-38px;
+		z-index: 100;
+	}
+	.ul_shopping_best > .slick-next {
+		background-size: 28px 78px !important;
+		background-repeat: no-repeat !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_next.png?v.4");
+		right:-50px;
+	}
+    .li_shopping_best_items {
+		width: 206px!important; 
+		list-style: none;
+		padding: 0;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+    }
+	.thumb{
+		position: relative;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+	.thumb > img{
+		width: 206px;
+		height: 206px;
+	}
+	.shopping_best > .slick-prev{
+		left: -1px;
+		background: url(https://recipe1.ezmember.co.kr/img/store/icon_arrow3_pre.png?v.4);
+		background-repeat: no-repeat;
+		padding: 1px 6px;
+		width: 40px;
+		height: 80px;
+	}
+	.shopping_best > .slick-next{
+		background: url(https://recipe1.ezmember.co.kr/img/store/icon_arrow3_next.png?v.4);
+		background-repeat: no-repeat;		
+		padding: 1px 6px;
+		height: 80px;
+		width: 40px;
+		right: -13px;
+	}
+    /* 인기유저 */
+    .user_list > .slick-list > .slick-track > .slick-active{
+    	width: 110px !important;
+    }
+    .user_list{
+    	width:1188.400px;
+		height:180px;
+		display:inline-block; 
+		margin: 0 25px;
+		vertical-align:middle; 
+		overflow:hidden;
+    } 
+    .user_list > .slick-prev{
+        left: 0px;
+    }
+    .user_list > .slick-next{
+    	right: -7px;
+    }
+	.li_user_list{
+		width: 110px !important;
+		list-style: none;
+		padding: 0;
+		display: table-cell;
+	}
+	.li_user_list > a{
+		text-align: center;
+		width: 110px;
+	}
+	.user_list_name{
+		display: block;
+		width: 90px;
+		height: 30px;
+		overflow: hidden;
+		text-align: center;
+		padding-top: 8px;
+	}
+	.li_user_list > a > img{
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+	}
+    .user_list_li_name{
+		display: block;
+		width: auto;
+		height: 30px;
+		overflow: hidden;
+		text-align: center;
+		padding-top: 8px;
+    }
+
+    .alim_btn_st2 {
+		width: 90px !important;
+		height: 27px;
+		margin-top: 10px;
+		color: #77b347;
+		background: #fff;
+		border: 1px solid #77b347;
+		border-radius: 16px;
+		line-height: 1;
+		display: inline-block;
+		text-align: center;
+		letter-spacing: -0.05em;
+		font-size: 14px;
+		padding: 5px 0 6px;
+    }
+    .li_UserList > a:focus{
+    	outline:none;
+    }
+    .alim_btn_st2:hover{
+    	color: #77b347;
+    }
+    /*자취생*/
+    .ul_convenient_combo_list{
+		width: 1090px;
+		text-align: left;
+		padding-left: 10px;
+		margin: 0 0 0 44px;
+		overflow: hidden;
+		display: flex;
+    }
+    .ul_convenient_combo_list > .slick-arrow{
+		height: 80px;
+		width: 40px;
+		padding: 1px 6px;
+		top:80px;
+    }
+	.ul_convenient_combo_list > .slick-list{
+		margin: 0;
+	    height: 218px;
+    }
+	.ul_convenient_combo_list > .slick-list > .slick-track{
+		opacity: 1;
+		width: 7644px !important;
+	}
+    .ul_convenient_combo_list > .slick-prev{
+		left: 14px;
+		background-size: 28px 78px !important;
+		background-repeat: no-repeat !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_pre.png?v.4");
+    }
+    .ul_convenient_combo_list > .slick-next{
+		background-size: 28px 78px !important;
+		background-repeat: no-repeat !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_next.png?v.4");
+		right: 0;
+    }
+    .ul_convenient_combo_list > .slick-list > .slick-track{
+		 width: max-content !important;
+    }
+    .ul_convenient_combo_list > .slick-list > .slick-track > .slick-slide.slick-active {
+		/* width: 261px !important;
+		margin-right:12px; */
+		 width: fit-content !important;
+    } 
+    .li_convenient_combo_items{
+		list-style: none;
+		padding: 0;
+		width: 261px !important;
+    	display: inline-block; 
+    	margin-right : 12px;
+		/*display:flex;*/
+		vertical-align: top;
+		position: relative;
+    }
+    
+   .thumb2 {
+		position: relative;
+		border-radius: 4px;
+		overflow: hidden;
+    }
+
+    .thumb2 > img {
+		width: 100%;
+		height: 147px;
+    }
+    .cate_cont{
+    	width: 1100px;
+    } 
+    .cate_cont  > .slick-track > .slick-active{
+    	width:92px !important;
+	}
+    
+	.cate_cont > .slick-arrow{
+		padding: 1px 6px;
+		width: 27px;
+		height: 44px;
+		top:40px;
+	}
+	.cate_cont > .slick-prev{
+		background-repeat: no-repeat !important;
+		background-size: 15px 42px !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_pre.png?v.1");
+		left: 0px;
+	}
+	.cate_cont > .slick-list{
+		margin: 0 53px;
+	}
+	.cate_cont > .slick-next{
+		background-repeat: no-repeat !important;
+		background-size: 15px 42px !important;
+		background: url("https://recipe1.ezmember.co.kr/img/store/icon_arrow3_next.png");
+		right: 0px;
+	}
+    .li_cate_list{
+		display: table-cell;
+		width: 92px !important;
+    }
+    .li_cate_list > a {
+		padding: 0;
+		text-align: center;
+		display: table-cell;
+		margin: 0;
+		width: 92px;
+    }
+    .li_cate_list > a > img{
+		width: 66px;
+		height: 66px;
+		display: inline-block;
+    }
+    .li_cate_list > a > span{
+		display: block;
+		padding-top: 6px;
+		font-size: 14px;
+    }
+   /*베스트 레시피*/
+    .ul_best_recipe_list{
+		padding:0;
+		padding-top:6px;
+		padding-left:19px;
+		margin-left: -15px;
+		vertical-align: top;
+    }
+    
+    .best_recipe_list{
+		width: 222px;
+		list-style: none;
+		padding: 0;
+		margin: 0 12px 40px 0;
+		margin-bottom: 0px;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+    }
+    .rank_thumbnail{
+    	position: relative;
+    	border-radius: 4px;
+    	overflow: hidden;
+		height: 222px;
+		width: 222px;
+    }
+    .rank_thumbnail > a > img{
+    	width: 100%;
+    	height: 100%
+    }
+    .best_recipe_list_num{
+    	position: absolute;
+    	left: -4px;
+    	top: -4px;
+    	z-index: 100;
+    	background: #fff;
+    	border: 1px solid #bbb;
+    	-webkit-box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+    	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.08);
+    	min-width: 36px;
+    	text-align: center;
+    	border-radius: 4px;
+    	line-height: 1;
+    	padding: 8px 7px 10px;
+    	letter-spacing: -0.03em;
+    	vertical-align: unset;
+    }
+	.recipe_caption_tit{
+		margin: 0 0 6px 0;
+		color: #000;
+		text-align: left;
+		font-size: 15px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		word-wrap: break-word;
+		white-space: normal;
+		line-height: 1.5;
+	}
+    .recipe_caption_rv_name{
+		display: block;
+		vertical-align: bottom;
+		color: #999;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: 14px;
+		vertical-align: 0;
+		padding: 0  1px 7px 0;
+		font-weight: 300;
+    }
+    .recipe_caption_rv_name > a > img {
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		margin: 0 4px -2px 0;
+		vertical-align: text-bottom;
+    }
+	.common_vod_label{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		z-index: 10;
+	}
+	.Recipe_caption{
+	    text-align: left;
+	    padding: 10px 2px;
+	}
+	.Recipe_caption_rv{
+		vertical-align: super;
+		line-height: 1;
+	    /* margin: 0 0 9px 0; */
+		display: inline-flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.Recipe_caption_rv_ea{
+		color: #999;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		font-size: 12px;
+		vertical-align: middle;
+		padding-left: 1px;
+		line-height: normal;
+		font-weight: 300;
+	}
+	.Recipe_caption_hits{
+		vertical-align: middle;
+		color: #999;
+		font-size: 13px;
+		margin-left: 2px;
+		font-weight: 300;
+	}

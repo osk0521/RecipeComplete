@@ -1,0 +1,132 @@
+@charset "UTF-8";
+		*{
+			font-family: 'Noto Sans KR' , sans-serif;
+			list-style: none;
+			text-decoration: none;
+			border-collapse: collapse;
+			box-sizing: border-box;
+			margin:0px;
+			padding:0px;
+			color:#000;
+		}
+		li {
+			list-style: none;
+		}
+		.header_top{
+			margin: auto;
+		}
+		.header_top_cont{
+			width: 1200px;
+			height: 60px;
+			backgroud: blue;
+			margin: auto;
+			display: flex;
+		}
+		.logo{
+			width:154px;
+			height:34px;
+			padding-left: 4px;
+			padding-top: 22px;
+			cursor: pointer;
+		}
+		.first_nav{
+			display: flex;
+			width:1270px;
+			justify-content: flex-end;
+			line-height: 22px;
+		}
+		.first_nav>li{
+			margin-left: 35px;
+			margin-top: 22px;
+		}
+		.header_mn{
+			margin: auto;
+			border-bottom: 1px solid #e7e7e7;
+		}
+		.header_mn_cont{
+			width: 1200px;
+			height: 60px;
+			margin: auto;
+			display: flex;
+			font-size: 18px;
+		}
+		.total_category{
+			width: 186px;
+			height: 50px;
+			background: white;
+			padding-left: 10px;
+			padding-top: 10px;
+		}
+		div.total_category{
+			display: flex;
+		}
+		div.total_category:hover{
+			color: green;
+		}
+		.total_category>a{
+			padding-top: 7px;
+    		padding-left: 8px;
+		}
+		.private{
+			padding-left: 5px;
+			padding-top: 10px;
+		}
+		.header_mn>.header_mn_cont>ul{
+			display: flex;
+		}
+		.header_mn>.header_mn_cont>ul>li{
+			margin-left: 18px;
+			margin-right: 15px;
+			margin-top: 15px;
+		}
+		.header_mn>.header_mn_cont>ul>li>a:hover{
+			 color: green;
+		}
+		.recipe{
+			width: 100px;
+			height: 30px;
+			background: white;
+			padding-top: 11px;
+			padding-left: 20px;
+			margin-top: -1px;
+		}
+		.search{
+			width: 215px;
+			height: 37px;
+			border-radius: 20px;
+			background: #f4f4f4;
+			border: none;
+			display: flex;
+			margin-top: 10px;
+   			margin-left: 110px;
+		}
+		.search > form > span {
+			margin-right: 6px;
+		}
+		.search>form>input{
+			border: none;
+			outline: none;
+			width: 172px;
+			height: 34px;
+			background: rgba(0,0,0,0.0);
+			color:black;
+			padding-left: 10px;
+		}
+		.dbg{
+			width: 22px;
+			height: 22px;
+		}
+		.dbg>img{
+			width: 22px;
+			padding-top: 6px;
+		}
+		.cart{
+			width: 50px;
+			height: 50px;
+			background: white;
+			margin-left: 3px;
+		}
+		.cart>img{
+			width: 30px;
+			padding-top: 15px;
+		}

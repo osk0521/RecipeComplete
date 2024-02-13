@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(마이페이지 알람) */
+/* 쉐프 추천 */
+		#div_mypage_alarm_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort {
+			display: flex;
+			justify-content: space-between;
+			font-size: 17px;
+			border-bottom: 1px solid #ccc;
+		} 
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 {
+			display: flex;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div {
+			background: #fff;
+			color: #666;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a {
+			display: block;
+			padding: 14px 38px;
+			margin-bottom: -1px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a:hover {
+			color: #515151;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a.open_active {
+			cursor: default;
+			border: 1px solid #ccc;
+			border-bottom: 1px solid #fff;
+			font-weight: 600;
+		}
+		#div_mypage_alarm_panel > #div_mypage_recommendChef {
+			padding: 50px 70px 40px;
+		}
+		#div_mypage_recommendChef > #mypage_recommendChef_header {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 0 20px 15px;
+		}
+		#mypage_recommendChef_header span {
+			font-size: 22px;
+			color: #000;
+			letter-spacing: -0.04em;
+			font-weight: 500;
+		}
+		#mypage_recommendChef_header > span > span {
+			color: #74b243;
+		}
+		#mypage_recommendChef_header > a {
+			border: 1px solid #d6c1aa;
+			color: #b99773;
+			font-size: 13px;
+			padding: 3px 8px;
+			font-weight: bold;
+			display: block;
+			height: 25px;
+		}
+		#div_mypage_recommendChef > #mypage_recommendChef_body {
+			width: 730px;
+			height: 180px;
+		}
+		#mypage_recommendChef_body > .mypage_recommendChef_item {
+			padding: 10px;
+		}
+		.mypage_recommendChef_item > a {
+			display: block;
+			outline: none;
+		}
+		.mypage_recommendChef_item > a > img {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+		}
+		.mypage_recommendChef_item > span {
+			display: block;
+			width: 90px;
+			height: 30px;
+			text-align: center;
+			overflow: hidden;
+			padding-top: 8px;
+		}
+		.mypage_recommendChef_item > button {
+			display: block;
+			width: 90px;
+			margin-top: 6px;
+			font-size: 14px;
+			padding: 5px 0 6px;
+			color: #77b347;
+			background: #fff;
+			border: 1px solid #77b347;
+			border-radius: 16px; 
+			line-height: 1;
+			text-align: center;
+			letter-spacing: -0.05em;
+		}
+/* 마이페이지 알람 */
+		#div_mypage_alarm_panel > #div_mypage_alarm_body {
+			text-align: center;
+			margin: 22px 10px 10px;
+		}
+		#div_mypage_alarm_body > #div_mypage_alarm_content {
+			padding: 0 20px;
+		}
+		#div_mypage_alarm_content > .div_mypage_alarm_item {
+			border-bottom: 1px solid #e5e5e5;
+			padding: 20px 0 20px 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		#div_mypage_alarm_content > .div_mypage_alarm_item:first-child {
+			border-top: 1px solid #e5e5e5;
+		}
+		.div_mypage_alarm_item > .mypage_alarm_item_left {
+			display: flex;
+		}
+		.mypage_alarm_item_left > .mypage_alarm_user_img {
+			padding-right: 25px;
+		}
+		.mypage_alarm_item_left > .mypage_alarm_user_img > a > img {
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+		}
+		.mypage_alarm_item_left > .mypage_alarm_text {
+			line-height: 1.8;
+			text-align: left;
+		}
+		.mypage_alarm_text > .mypage_alarm_title {
+			font-size: 17px;
+		}
+		.mypage_alarm_text > .mypage_alarm_title span {
+			color: #de4830;
+		}
+		.mypage_alarm_text > .mypage_alarm_detail > a {
+			font-size: 17px;
+			color: #999;
+		}
+		.mypage_alarm_text > .mypage_alarm_time {
+			font-size: 14px;
+			color: #999;
+		}
+		.div_mypage_alarm_item > .mypage_alarm_item_right {
+			display: flex;
+			align-items: center;
+			margin-right: 10px;
+		}
+		.mypage_alarm_item_right > .mypage_alarm_recipe_img > a > img{
+			width: 90px;
+			height: 90px;
+		}
+		.mypage_alarm_item_right > .mypage_alarm_followbutton > a {
+			display: inline-block;
+			width: 100px;
+			font-size: 14px;
+			padding: 5px 0 6px;
+			color: #77b347;
+			border: 1px solid #77b347;
+			border-radius: 16px;
+			line-height: 1;
+			text-align: center;
+			letter-spacing: -0.05em;
+		}

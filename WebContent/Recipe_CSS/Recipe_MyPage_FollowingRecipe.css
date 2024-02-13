@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(마이페이지 팔로우레시피 - 테이블 정렬방식) */
+		#div_mypage_followrecipe_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_mypage_followrecipe_panel > form > #div_mypage_followrecipe_header {
+			display: flex;
+			justify-content: space-between;
+			font-size: 20px;
+			border-top: 2px solid #666;
+			border-bottom: 1px solid #e6e7e8;
+			padding: 15px 10px;
+			margin: 12px 0 10px;
+			font-weight: bold;
+		} 
+		#div_mypage_followrecipe_header > span {
+			padding-top: 4px;
+		}
+		#div_mypage_followrecipe_header > div {
+			display: flex;
+		}
+		#div_mypage_followrecipe_header button {
+			padding: 0 15px;
+			margin-left: 9px;
+			height: 34px;
+			color: #666;
+			font-weight: normal;
+			background: #fff;
+			border: 1px solid #ccc;
+			font-size: 14px;
+		}
+		#div_mypage_followrecipe_header > div > div {
+			display: flex;
+			justify-content: flex-start;
+		}
+		#div_mypage_followrecipe_header > div > div > button {
+			margin: 0;
+			padding: 5px 13px 4px 12px;
+		}
+		#div_mypage_followrecipe_header > div > button.on {
+			background: #6a6f74;
+		    border-color: #6a6f74;
+		    color: #fff;
+		}
+		#div_mypage_followrecipe_header > div > div > button > span {
+			color: #ccc;
+			font-size: 16px;
+		}
+		#div_mypage_followrecipe_header > div > div > button.sort_active {
+			background: #6a6f74;
+			border-color: #6a6f74;
+			color: #fff;
+		}
+		#div_mypage_followrecipe_header > div > div > .sort_active > span {
+			color: #fff;
+		}
+		#div_mypage_followrecipe_panel > form > .div_mypage_followrecipe_body {
+			text-align: center;
+			margin: 22px 10px;
+		}
+/* 팔로우레시피 없을 때 */
+		#div_mypage_followrecipe_none {
+			padding: 40px 0;
+			color: #999;
+			font-size: 16px;
+			line-height: 26px;
+		}
+		#div_mypage_followrecipe_none > img {
+			width: 180px;
+			height: 180px;
+		}
+		#div_mypage_followrecipe_none > p {
+			margin: 0;
+			padding: 25px 0 20px;
+			font-size: 24px;
+			color: #333;
+			line-height: 150%;
+		}
+/* /팔로우레시피 없을 때 */
+/* 팔로우레시피 테이블정렬 */
+		.div_mypage_followrecipe_body > #div_mypage_followrecipe_content_table {
+			margin: 0 -15px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#div_mypage_followrecipe_content_table > .div_mypage_followrecipe_item {
+			width: 25%;
+			padding: 0 15px;
+		}
+		#div_mypage_followrecipe_content_table .div_mypage_followrecipe_item > .a_mypage_followrecipe_img {
+			display: block;
+			width: 182px;
+			height: 292px;
+			border: 1px solid #ddd;
+			background: #fff;
+			box-shadow: 0 2px 3px #eee;
+		}
+		#div_mypage_followrecipe_content_table .a_mypage_followrecipe_img > img {
+			width: 180px;
+			height: 180px;
+			display: block;
+		}
+		#div_mypage_followrecipe_content_table .a_mypage_followrecipe_img div {
+			text-align: left;
+		}
+		#div_mypage_followrecipe_content_table .a_mypage_followrecipe_img > .div_mypage_followrecipe_text {
+			padding: 9px;
+			color: #333;
+		}
+		#div_mypage_followrecipe_content_table .div_mypage_followrecipe_text > .followrecipe_title {
+			font-size: 15px;
+			font-weight: bold;
+			margin: 5px 0;
+			display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-line-clamp: 2;
+		    overflow: hidden;
+		}
+		#div_mypage_followrecipe_content_table .div_mypage_followrecipe_text > .followrecipe_writer {
+			color: #999;
+			margin: 0;
+			font-size: 12px;
+		}
+		#div_mypage_followrecipe_content_table .div_mypage_followrecipe_item > .div_mypage_followrecipe_checkbox {
+			text-align: center;
+			margin: -10px 0 30px;
+		}
+		#div_mypage_followrecipe_content_table .div_mypage_followrecipe_checkbox > input[type="checkbox"] {
+			margin-top: 24px;
+		}
+/* /팔로우레시피 테이블정렬 */
+/* 팔로우레시피 선정렬 */
+		.div_mypage_followrecipe_body > #div_mypage_followrecipe_content_line {
+			display: none;
+			margin: 0 -15px;
+		}
+		#div_mypage_followrecipe_content_line > .div_mypage_followrecipe_item {
+			display: flex;
+			padding: 4px 0 20px 20px;
+			border-bottom: 1px solid #e6e7e8;
+			margin-top: 15px;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_item:first-child {
+			margin-top: 0;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_item > .div_mypage_followrecipe_checkbox {
+			text-align: center;
+			padding: 80px 15px 0 0;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_item > .div_mypage_followrecipe_img {
+			padding-right: 26px;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_item > .div_mypage_followrecipe_img > a > img {
+			width: 180px;
+			height: 180px;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_item > .div_mypage_followrecipe_text {
+			text-align: left;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_text > .followrecipe_title {
+			padding-top: 6px;
+			margin-top: 0;
+			margin-bottom: 5px;
+			font-size: 28px;
+			line-height: 35px;
+		}
+		#div_mypage_followrecipe_content_line .div_mypage_followrecipe_text > .followrecipe_writer {
+			font-size: 18px;
+			color: #999;
+			padding-top: 6px;
+		}
+/* /팔로우레시피 선정렬 */
+		#div_mypage_page_panel > #div_mypage_page_bundle {
+			display: flex;
+			justify-content: center;
+			margin: 30px 0;
+		}
+		#div_mypage_page_bundle > .div_mypage_page_button > a {
+			display: inline-block;
+			padding: 9px 15px;
+			margin: 0 3px;
+			text-decoration: none;
+			border: 1px solid #ebebeb;
+		}
+		#div_mypage_page_bundle > .div_mypage_page_button > a.button_active {
+			color: #ff5e5e;
+			cursor: default;
+			font-weight: 600;
+		}

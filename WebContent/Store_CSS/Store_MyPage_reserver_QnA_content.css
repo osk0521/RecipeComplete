@@ -1,0 +1,483 @@
+@charset "UTF-8";
+		
+/* 여기에 작성 */
+		.main_cont_wrap{
+			min-height: 560px;
+			position: relative;
+		}
+		#div_store_location_wrap {
+			width: 100%;
+			border-bottom: 1px solid #ededed;
+		}
+		#div_store_location_content {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#div_store_location_content > span {
+			display: block;
+			padding: 12px 0 12px 0;
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a {
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a:hover {
+			text-decoration: underline;
+		}
+		#div_mypage {
+			padding: 45px 0 0 0;
+			position:relative;
+			width: 1200px;
+			margin: 0 auto;
+			display: flex;
+		}
+		#div_mypage_left {
+			width: 200px;
+		}
+		#div_mypage_side > h2 {
+			padding: 0 0 13px 10px;
+			border-bottom: 1px solid #ececec;
+			font-size: 30px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-weight: 400;
+		}
+		#ul_mypage_menu {
+			margin: 7px 0 0 0;
+			list-style: none;
+			padding: 0;
+		}
+		.div_small_line {
+			width: 27px;
+			height: 1px;
+			border-top: 0.5px solid #999;
+			padding-top: 7px;
+		}
+		#ul_mypage_menu > li {
+			padding: 0 0 15px 0;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		#ul_mypage_menu > li:first-child {
+			margin: 30px 0 0 0;
+		}
+		.mypage_menu_depth1 {
+			margin: 5px 0 25px 0;
+		}
+		.mypage_menu_depth1 > li {
+			padding-top: 1px;
+			font-weight: normal;
+		}
+		.mypage_menu_depth1 > li > a {
+			font-size: 12px;
+			text-indent: 10px;
+			display: block;
+			padding: 7px 0 6px 0;
+		}
+		.mypage_menu_depth1 > li > a:hover {
+			font-weight: bold;
+			background: #f8f8f8;
+			color: #46ae4f;
+		}
+		.mypage_menu_depth1 > li > a.active {
+			font-weight: bold;
+			background: #f8f8f8;
+			color: #46ae4f;
+		}
+		#div_mypage_right {
+			width: 960px;
+			padding: 0 0 0 40px;
+			min-height: 500px;
+		}
+		#div_mypage_main {
+			padding: 0 0 50px 0;
+		}
+		#div_mypage_top {
+			width: 100%;
+			margin: 0 0 35px 0;
+			border: 2px solid #e3e3e3;
+			background: #fff;
+			display: flex;
+		}
+		#div_mypage_top_left {
+			width: 31%;
+			padding: 20px 0;
+			background: #f7f9f8;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#div_mypage_top_text {
+			text-align: center;
+		}
+		#div_mypage_top_text > p {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		#div_mypage_top_right {
+			width: 69%;
+			vertical-align: middle;
+			background: #fff;
+		}
+		#div_mypage_top_right > ul {
+			width: 100%;
+			padding: 27px 10px;
+			line-height: 1;
+		}
+		#div_mypage_top_right > ul > li {
+			display: inline-block;
+			width: 33%;
+			font-size: 14px;
+			text-align: center;
+		}
+		#div_mypage_top_right > ul > li > div:first-child {
+			padding: 0 10px;
+		}
+		#div_mypage_top_right > ul > li > div:last-child > em {
+			display: block;
+			padding: 15px 0;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+		}
+		#div_mypage_top_right > ul > li > div:last-child > a > strong {
+			padding: 0 3px 0 0;
+			font-size: 26px;
+			color: #46ae4f;
+			font-weight: 500;
+		}
+		.div_mypage_title{
+			display: flex;
+    		justify-content: space-between;
+   			align-items: end;
+		}
+		.div_mypage_title > a{
+			color: #ffffff;
+    		font-size: 12px;
+    		border: 1px solid #979797;
+    		background: #979797;
+    		text-align: center;
+    		padding: 4px 13px;
+		}
+		.div_mypage_order_reserver_checkbox{
+		 margin: 0 0 35px 0;
+    	padding: 20px 20px 20px 30px;
+   		 border: 3px solid #eeeeee;
+		}
+		.div_mypage_order_reserver_checkbox{
+			display: flex;
+		}
+		.div_mypage_order_reserver_checkbox_list>span{
+			color: #777777;
+    		font-size: 13px;
+    		margin: 0;
+		}
+		.div_mypage_order_reserver_checkbox_list>button{
+			width: 54px;
+    		height: 31px;
+    		color: #777777;
+    		font-size: 12px;
+    		border: 1px solid #d6d6d6;
+    		background: #fff;
+		}
+		.calender_submit>button{
+			display: flex;
+    		justify-content: space-evenly;
+   		 	padding-top: 5px;
+		}
+		.calender_submit_img{
+			margin-top:3px;
+		}
+		.calender_submit_img>svg{
+			fill: white;
+		}
+		.div_mypage_order_reserver_calender{
+			display: flex;
+			margin-left: 15px;
+		}
+		.calender_inputbox_from{
+			margin-right: 5px;
+		}
+		.calender_inputbox_to{
+			margin-left: 5px;
+		}
+		.calender_submit{
+			display: flex;
+			margin-left: 5px;	
+		}
+		.calender_inputbox_from,.calender_inputbox_to{
+			padding-right: 8px;		
+		}
+		.calender_inputbox_from>input, .calender_inputbox_to>input{
+			border: none;
+			outline: none;
+			width:100px;
+		}
+		.calender_inputbox_from>svg,.calender_inputbox_to>svg{
+			margin-top:7px;
+		}
+		.calender_inputbox_from,.calender_inputbox_to{
+			height: 33px;
+			border: 1px solid #d6d6d6;
+			border-radius: 4px;
+		}
+		.calender_submit{
+			height: 33px;
+    		color: #ffffff;
+    		font-weight: bold;
+    		border: 1px solid #46AE4F;
+   			background: #46AE4F;
+		}
+		.calender_submit>button{
+			border: none;
+			background: none;
+			width: 120px;
+			color: white;
+		}
+		.div_mypage_title {
+			padding-bottom: 5px;
+		}
+		.div_mypage_title > h3 {
+			display: inline-block;
+			font-size: 22px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-weight: 500;
+		}
+		#div_mypage_order_case {
+			display: inline-block;
+			width: 19%;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#div_mypage_order_case > ul {
+			display: inline-block;
+			width: 70%;
+		}
+		#div_mypage_order_case > ul > li {
+			padding: 8px 5px 10px 5px;
+			font-size: 12px;
+			border-top: 1px dotted #bfbfbf;
+			text-align: left;
+			display: flex;
+			justify-content: space-between;
+		}
+		#div_mypage_order_case > ul > li:first-child {
+			border-top: none;
+		}
+		#div_mypage_order_case > ul > li > b {
+			font-weight: 500;
+		}
+		#div_mypage_recent_order > .div_mypage_title {
+			display: flex;
+			justify-content: space-between;
+		} 
+		#div_mypage_recent_order > .div_mypage_title > a {
+			font-size: 12px;
+			padding-top: 30px;
+		}
+		#table_recent_order {
+			width: 100%;
+			border: 0;
+			border-spacing: 0;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		#table_recent_order > thead > tr > th {
+			padding: 9px 10px 10px 10px;
+			border-top: 1px solid #999;
+			border-bottom: 1px solid #dbdbdb;
+			background: #f7f7f7;
+			font-size: 14px;
+			font-weight: 500;
+			text-align: left;
+			color: #333;
+			line-height: 1.5;
+		}
+		#table_recent_order > tbody > tr > td {
+			border-bottom: 1px solid #dbdbdb;
+			height: 31px;
+			padding: 15px 10px 14px 10px;
+			color: #777;
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: left;
+		}		
+		#table_recent_order > tbody > tr > td.order_day_num {
+			border-right: 1px dotted #ededed;
+		}
+		td.order_day_num > em {
+			font-style: normal;
+			font-weight: normal;
+			color: inherit;
+		}
+		td.order_day_num > a.order_num_link {
+			color: #329cff;
+			font-weight: bold;
+			border-bottom: 1px solid #329cff;
+		}
+		td.order_day_num > a.order_num_link > span {
+			color: inherit;
+		}
+		td.goods_title_option {
+			text-align: left;
+		}
+		div.goods_info {
+			display: flex;
+		}
+		div.goods_info > div.goods_thumbnail {
+			width: 50px;
+		}
+		div.goods_thumbnail > a > img {
+			width: 50px;
+			border: 1px solid #dbdbdb;
+		}
+		div.goods_text {
+			padding-left: 10px;
+		}
+		div.goods_text > a > em {
+			display: block;
+			color: #333;
+			font-style: normal;
+			font-weight: normal;
+			word-break: break-all;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+		}
+		div.goods_text > span {
+			display: block;
+			padding: 3px 0;
+			color: #a9a9a9;
+			font-size: 11px;
+			line-height: 1;
+			word-break: break-all;
+		}
+		td.goods_price_qty > strong {
+			color: #46ae4f;
+			font-weight: 500;
+		}
+		td.goods_order_status > em {
+			font-weight: normal;
+			font-style: normal;
+			color: inherit;
+		}
+		td.goods_order_status > div.goods_order_button {
+			margin-top: 5px;
+			color: inherit;
+		}
+		div.goods_order_button > a.delivery_trace_button {
+			display: inline-block;
+			font-size: 12px;
+			background: #efefef;
+			padding-bottom: 2px;
+			padding-left: 11px;
+			border: 1px solid #dbdbdb;
+			vertical-align: middle;
+			color: #777;
+		}
+		div.goods_order_button > a.delivery_trace_button > span {
+			line-height: 22px;
+			display: inline-block;
+			padding-right: 12px;
+			color: inherit;
+		}
+		td.goods_confirm > div.confirm_button > a.review_update_button {
+			display: inline-block;
+			min-width: 46px;
+			margin: 2px 1px;
+			padding: 3px 10px 4px 10px;
+			border: 1px solid #46ae4f;
+			background: #46ae4f;
+			text-align: center;
+			font-size: 13px;
+		}
+		a.review_update_button > em {
+			font-style: normal;
+			font-weight: normal;
+			color: #fff;
+		}
+		td.goods_confirm > div.confirm_button > a.refund_reason_button {
+			display: inline-block;
+			min-width: 46px;
+			margin: 2px 1px;
+			padding: 3px 10px 4px 10px;
+			border: 1px solid #dbdbdb;
+			background: #efefef;
+			text-align: center;
+			font-size: 13px;
+		}
+		a.refund_reason_button > em {
+			font-style: normal;
+			font-weight: normal;
+			color: #777;
+		}
+		#div_mypage_recent_goods {
+			margin-top: 50px;
+		}
+		#div_mypage_recent_goods > .div_mypage_title {
+			margin-bottom: 20px;
+			border-bottom: 1px solid #ddd;
+		}
+		#div_mypage_recent_goods_content {
+			width: 100%;
+		}
+		#div_mypage_recent_goods_content > ul {
+			font-size: 0;
+			display: flex;
+		}
+		#div_mypage_recent_goods_content > ul > li.recent_goods_item {
+			width: 25%;
+			max-width: 220px;
+			margin-right: 12px;
+			margin-top: 10px;
+		}
+		.div_recent_goods_thumbnail {
+			width: 100%;
+		}
+		.div_recent_goods_thumbnail > img { 
+			width: 100%;
+		}
+		.div_recent_goods_text {
+			padding: 12px 5px 8px;
+			text-align: left;
+		}
+		.div_recent_goods_text > .div_recent_goods_title {
+			height: 48px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			overflow: hidden;
+			line-height: 1.5;
+			margin-bottom: 12px;
+			text-align: left;
+			font-size: 16px;
+			color: #222;
+		}
+		.div_recent_goods_price {
+			padding-bottom: 10px;
+			line-height: 1;
+		}
+		.div_recent_goods_price > strong {
+			color: #222;
+			font-weight: 500;
+		}
+		.div_recent_goods_price > strong > span {
+			font-size: 20px;
+			color: #000;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+		}
+		.div_recent_goods_price > strong > small {
+			font-size: 18px;
+		}
+		.reserver_notice{
+			margin-top: 30px;
+		}

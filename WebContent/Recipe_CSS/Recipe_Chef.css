@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(쉐프) */
+		#div_chef_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_chef_panel > #div_chef_header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 15px;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 1px;
+			font-size: 17px;
+		}
+		#div_chef_panel > #div_chef_header > .div_chef_presentation {
+			margin-bottom: -1px;
+			background: #fff;
+			color: #666;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-bottom: 1px solid #fff;
+		}
+		#div_chef_header > .div_chef_search > form {
+			display: flex;
+			margin-top: 8px;
+		}
+		#div_chef_header > .div_chef_search > form > .div_chef_search_bar {
+			position: relative;
+		}
+		#div_chef_header > .div_chef_search > form > .div_chef_search_bar > span {
+			position: absolute;
+			left: 8px;
+			top: 6px;
+			font-size: 20px;
+			color: #ccc;
+		}
+		#div_chef_header > .div_chef_search > form > .div_chef_search_bar > input {
+			font-size: 14px;
+			border: 1px solid #ccc;
+			border-radius: 0;
+			width: 240px;
+			height: 34px;
+			background: #fff;
+			padding: 0 0 0 32px;
+			margin-top: 1px;
+			margin-right: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#div_chef_header > .div_chef_search > form > .div_chef_search_bar > input::placeholder {
+			color: #aaa;
+		}
+		#div_chef_header > .div_chef_search > form > button {
+			background: #f7f7f7;
+			border: 1px solid #ccc;
+			width: 60px;
+			height: 34px;
+			padding: 0 0 1px 0;
+			margin: 1px 5px 0 -6px;
+			color: #333;
+			font-size: 14px;
+			font-weight: bold;
+			border-radius: 3px;
+		}
+		.div_chef_presentation > a {
+			cursor: default;
+			display: block;
+			padding: 14px 38px;
+			margin-bottom: -2px;
+			font-weight: 550;
+			border-bottom: 1px solid #fff;
+		}
+		#div_chef_sort1 {
+			display: flex;
+			margin: 0;
+			border-top: 1px solid #d2d2d2;
+			background: #efefef;
+			padding: 0;
+		}
+		#div_chef_sort1 > .div_chef_sort1_box {
+			border-right: 1px solid #d2d2d2;
+			border-bottom: 1px solid #d2d2d2;
+			text-align: center;
+			width: 53%;
+			font-size: 16px;
+		}
+		#div_chef_sort1 > .div_chef_sort1_box:last-child {
+			border-right: none;
+		}
+		#div_chef_sort1 > .active {
+			background: #fff;
+			border-bottom: 1px solid #fff;
+		}
+		#div_chef_sort1 > .div_chef_sort1_box > a {
+			display: inline-block;
+			width: 100%;
+			padding: 12px 0;
+			color: #999;
+		}
+		#div_chef_sort1 > .active > a {
+			color: #4a9c08;
+			font-weight: bold;
+		}
+		#div_chef_sort2 {
+			display: flex;
+			justify-content: space-between;
+			background: #fff;
+			border-bottom: 1px solid #d4d4d4;
+			height: 45px;
+			font-size: 13px;
+		}
+		#div_chef_sort2 > .div_chef_sort2_txt {
+			text-align: center;
+			
+		}
+		#div_chef_sort2 > .div_chef_sort2_txt > span {
+			font-weight: bold;
+			padding: 11px 0 0 20px;
+			display: inline-block;
+			margin: 0 0 10px;
+		}
+		#div_chef_sort2 > .div_chef_sort2_how {
+			display: flex;
+			align-content: center;
+		}
+		#div_chef_sort2 > .div_chef_sort2_how > div > .chef_sort2_button {
+			font-size: 15px;
+			color: #999;
+			border: 0;
+			padding: 11px 12px;
+			background: #fff;
+		}
+		#div_chef_sort2 > .div_chef_sort2_how > div > .chef_sort2_button {
+			font-size: 15px;
+			color: #999;
+			border: 0;
+			padding: 11px 12px;
+			background: #fff;
+		}
+		#div_chef_sort2 > .div_chef_sort2_how > .chef_sort2_button > span {
+			margin-right: 2px;
+			font-size: 16px;
+		}
+		.div_chef_sort2_how > div {
+			position: relative;
+		}
+		.ul_sort_menu{
+			position: absolute;
+			display: none;
+			top: 100%;
+			right: 0;
+			left: auto;
+			min-width: 160px;
+			padding: 5px 0;
+			margin: 2px 0 0;
+			font-size: 14px;
+			text-align: left;
+			list-style: none;
+			background: #fff;
+			border: 1px solid rgba(0, 0, 0, .15);
+			border-radius: 4px;
+			box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+		}
+		.ul_sort_menu > li {
+			padding: 3px 22px;
+			cursor: pointer;
+		}
+		.ul_sort_menu > li:hover {
+		    background-color: #f5f5f5;
+		}
+		.ul_sort_menu > li > a:hover {
+			color: #262626;
+		    text-decoration: none;
+		    outline: none;
+		}
+		#div_chef_body {
+			padding: 2px;
+			background: #fff;
+		}
+		#div_chef_body > .div_chef_box {
+			display: flex;
+			padding: 18px 5px;
+			border-bottom: 1px solid #e6e7e8;
+		}
+		.div_chef_box > .div_chef_box_num {
+			width: 170px;
+			line-height: 1;
+			text-align: center;
+			vertical-align: middle;
+			padding: 17px 6px 17px 0;
+			font-size: 32px;
+			color: #000;
+			font-weight: 700;
+		}
+		.div_chef_box > .div_chef_box_info {
+			display: flex;
+		}
+		.div_chef_box_user_img {
+			padding-right: 10px;
+		}
+		.div_chef_box_user_img > a > img {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			margin-left: 3px;
+		}
+		.div_chef_box_user_info {
+			margin-left: 3px;
+			margin-top: 6px;
+		}
+		.div_chef_box_user_name > a {
+			color: #de4830;
+			font-size: 18px;
+			font-weight: normal;
+			text-decoration: none;
+		}
+		.div_chef_box_user_name > button {
+			font-size: 13px;
+			font-weight: 400;
+			padding: 4px 8px;
+			margin: -2px 0 2px 6px;
+			border-radius: 3px;
+			color: #333;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+		.div_chef_box_user_figures {
+			margin-top: 6px;
+		}
+		.div_chef_box_user_figures > span {
+			padding: 1px 0 1px 22px;
+			margin-right: 16px;
+		}
+		.div_chef_box_user_figures > span:nth-child(1) {
+			background: url(//recipe1.ezmember.co.kr/img/mobile/icon_fork.png) left 1px no-repeat;
+			background-size: 18px;
+			font-size: 15px;
+			color: #888;
+			letter-spacing: -0.02em;
+		}
+		.div_chef_box_user_figures > span:nth-child(2) {
+			background: url(//recipe1.ezmember.co.kr/img/mobile/icon_scrap.png) left 1px no-repeat;
+			background-size: 18px;
+			font-size: 15px;
+			color: #888;
+			letter-spacing: -0.02em;
+		}
+		.div_chef_box_user_figures > span:nth-child(3) {
+			background: url(//recipe1.ezmember.co.kr/img/mobile/icon_view3.png) left 1px no-repeat;
+			background-size: 18px;
+			font-size: 15px;
+			color: #888;
+			letter-spacing: -0.02em;
+		}
+		.div_chef_box_user_figures > span:nth-child(4) {
+			background: url(//recipe1.ezmember.co.kr/img/mobile/icon_mem.png) left 1px no-repeat;
+			background-size: 18px;
+			font-size: 15px;
+			color: #888;
+			letter-spacing: -0.02em;
+		}
+		.div_chef_pagebox {
+			text-align: center;
+		}
+		.div_chef_pagebox > .div_chef_pagination {
+			display: flex;
+			justify-content: center;
+			padding-left: 0;
+			margin: 30px 0;
+		}
+		.div_chef_pagination > div > a {
+			font-weight: 440;
+			border: 1px solid #ebebeb;
+			padding: 9px 15px;
+			margin: 0 3px;
+			color: #888;
+			text-decoration: none;
+		}
+		.div_chef_pagination > div > a.chef_page_on {
+			color: #ff5e5e;
+			cursor: default;
+			font-weight: 510;
+		}

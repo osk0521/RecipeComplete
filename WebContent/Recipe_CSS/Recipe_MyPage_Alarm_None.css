@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+/* 메인컨텐츠(마이페이지 알람 - 아무것도 없을 때) */
+/* 쉐프 추천 */
+		#div_mypage_alarm_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort {
+			display: flex;
+			justify-content: space-between;
+			font-size: 17px;
+			border-bottom: 1px solid #ccc;
+		} 
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 {
+			display: flex;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div {
+			background: #fff;
+			color: #666;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a {
+			display: block;
+			padding: 14px 38px;
+			margin-bottom: -1px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a:hover {
+			color: #515151;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_sort > #div_mypage_alarm_sort1 > div > a.open_active {
+			cursor: default;
+			border: 1px solid #ccc;
+			border-bottom: 1px solid #fff;
+			font-weight: 600;
+		}
+		#div_mypage_alarm_panel > #div_mypage_recommendChef {
+			padding: 50px 70px 40px;
+		}
+		#div_mypage_recommendChef > #mypage_recommendChef_header {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 0 20px 15px;
+		}
+		#mypage_recommendChef_header span {
+			font-size: 22px;
+			color: #000;
+			letter-spacing: -0.04em;
+			font-weight: 500;
+		}
+		#mypage_recommendChef_header > span > span {
+			color: #74b243;
+		}
+		#mypage_recommendChef_header > a {
+			border: 1px solid #d6c1aa;
+			color: #b99773;
+			font-size: 13px;
+			padding: 3px 8px;
+			font-weight: bold;
+			display: block;
+			height: 25px;
+		}
+		#div_mypage_recommendChef > #mypage_recommendChef_body {
+			width: 730px;
+			height: 180px;
+		}
+		#mypage_recommendChef_body > .mypage_recommendChef_item {
+			padding: 10px;
+		}
+		.mypage_recommendChef_item > a {
+			display: block;
+			outline: none;
+		}
+		.mypage_recommendChef_item > a > img {
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+		}
+		.mypage_recommendChef_item > span {
+			display: block;
+			width: 90px;
+			height: 30px;
+			text-align: center;
+			overflow: hidden;
+			padding-top: 8px;
+		}
+		.mypage_recommendChef_item > button {
+			display: block;
+			width: 90px;
+			margin-top: 6px;
+			font-size: 14px;
+			padding: 5px 0 6px;
+			color: #77b347;
+			background: #fff;
+			border: 1px solid #77b347;
+			border-radius: 16px; 
+			line-height: 1;
+			text-align: center;
+			letter-spacing: -0.05em;
+		}
+/* 마이페이지 알람 */
+		#div_mypage_alarm_panel > #div_mypage_alarm_body {
+			text-align: center;
+			margin: 22px 10px;
+			border-top: 1px solid #e5e5e5;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_body > #div_mypage_alarm_none {
+			padding: 40px 0;
+			color: #999;
+			font-size: 16px;
+			line-height: 26px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_body > #div_mypage_alarm_none > img {
+			width: 180px;
+			height: 180px;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_body > #div_mypage_alarm_none > p {
+			margin: 0;
+			padding: 25px 0 20px;
+			font-size: 24px;
+			color: #333;
+			line-height: 150%;
+		}
+		#div_mypage_alarm_panel > #div_mypage_alarm_body > #div_mypage_alarm_none > button {
+			margin: 0 4px;
+			margin-top: 20px;
+			padding: 10px 30px;
+			font-size: 18px;
+		    line-height: 1.3333333;
+		    border-radius: 3px;
+		    color: #fff;
+		    background: #46ae4f;
+		    border: 1px solid #497725;
+		}
+		#div_profile_panel {
+			margin-bottom: 20px;
+		}
+		#div_profile_panel > #div_profile_background {
+			background: url(https://recipe1.ezmember.co.kr/img/mobile/my_pic_d3.jpg) left top no-repeat;
+			background-size: cover;
+			height: 150px;
+		}
+		#div_profile_panel > #div_profile_body {
+			text-align: center;
+			margin-top: -70px;
+			padding-bottom: 5px;
+		}
+		#div_profile_panel > #div_profile_body > #div_profile_img {
+			display: inline-block;
+			padding: 4px;
+			background: url("https://recipe1.ezmember.co.kr/img/mobile/shop_bg_name.png") left top;
+			border-radius: 50%;
+			position: relative;
+		}
+		#div_profile_body > #div_profile_img > #a_profile_img > img {
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+		}
+		#div_profile_body > #div_profile_img > #a_change_profile_img {
+			position: absolute;
+			right: -2px;
+			top: -2px;
+		}
+		#div_profile_body > #div_profile_img > #a_change_profile_img > img {
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+		}
+		#div_profile_body {
+			line-height: 1.5;
+		}
+		#div_profile_body > #div_profile_user_name {
+			margin-top: 5px;
+		}
+		#div_profile_body > #div_profile_user_name > b {
+			font-size: 18px;
+			display: block;
+			color: #000;
+			font-weight: 500;
+		}
+		#div_profile_body > #div_profile_user_introduce {
+			color: #777;
+			font-size: 12px;
+		}
+		#div_profile_body > #div_profile_user_introduce > span {
+			display: inline-block;
+			padding-right: -2px;
+		}
+		#div_profile_body > #div_profile_user_introduce > a {
+			color: #000;
+			text-decoration: none;
+		}
+		#div_profile_body > #div_profile_user_introduce > a:hover {
+			color: #000;
+			text-decoration: none;
+		}
+		#div_profile_body > #div_profile_figures {
+			margin-top: 10px;
+			color: #333;
+		}
+		#div_profile_body > #div_profile_figures > a:hover {
+			text-decoration: none;
+			color: #333;
+		}
+		#div_profile_body > #div_profile_figures > a > b {
+			font-weight: normal;
+		}
+		#div_profile_body > #div_profile_figures > span {
+			margin: 0 8px;
+			font-weight: bold;
+			color: #999;
+		}
+/* 여기에 작성 */
+		.blank_space {
+			background: #f1f1f2;
+			height:10px;
+			border-top: 1px solid #e6e7e8;
+			border-bottom: 1px solid #e6e7e8;
+			clear: both;
+		}
+		.advertisement {
+			margin: 10px;
+		}
+		.advertisement a img {
+			 width: 100%;
+			 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		}
+		#div_store_best {
+			padding: 12px 14px 0;
+		}
+		#div_store_best > #div_store_title {
+			text-align: left;
+			padding: 12px 5px;
+			border-bottom: 1px solid #e6e6e6;
+		}
+		#div_store_best > #div_store_title > b {
+			font-size: 18px;
+			color: #000;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > b > span {
+			font-size: 18px;
+			color: #74b243;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > a {
+			display: inline-block;
+			float: right;
+			font-size: 13px;
+			color: #999;
+			margin-top: 4px;
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product {
+			margin: 15px 0 0 0;
+		}
+		#div_store_best > #div_store_body > .div_product a {
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product a .div_product_img {
+			width: 305px;
+			border: 1px solid #ddd;
+		}
+		#div_store_best > #div_store_body > .div_product .div_product_text {
+			padding: 8px 2px 2px;
+			margin-bottom: 18px;
+		}
+		.product_title {
+			font-size: 16px;
+			color: #000;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 1.4;
+			margin-bottom: 8px;
+			
+		}
+		.product_price {
+			font-size: 20px;
+			color: #000;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			line-height: 1;
+			margin-bottom: 0;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.product_price > small {
+			font-weight: normal;
+			color: #000;
+			fot-size: 16px;
+			margin-left: 1px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.product_star {
+			padding-top: 8px;
+		}
+		.product_star img {
+			width: 13px;
+			margin: -1px 1px 0 0
+		}
+		.product_star span {
+			color: #999;
+			font-size: 11px;
+			padding-left: 3px;
+			vertical-align: middle;
+			font-weight: 300;
+		}
+		#div_store_more {
+			border-top: 1px solid #e6e6e6;
+			margon-top: -10px;
+		}
+		#div_store_more > #store_more_button {
+			display: inline-block;
+			width: 100%;
+			padding: 10px 0;
+			text-align: center;
+			color: #999;
+			border: none;
+			background: #fff;
+			font-weight: normal;
+			font-size: 14px;
+			font-family: 'Noto Sans KR', sans-serif!important;
+		}
+/*---------- body ----------*/
+		
+/*---------- footer ----------*/

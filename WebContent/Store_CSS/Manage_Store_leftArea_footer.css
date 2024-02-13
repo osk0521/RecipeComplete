@@ -1,0 +1,18 @@
+@charset "UTF-8";
+#main_wrap{
+	width: 1400px;
+	display: flex;
+}
+#left_area{
+	float: left;
+    width: 170px;
+   	min-height: 
+    border-right:1px solid #dbdbdb;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+#footer{
+	background: #dedee0;
+	height: 50px;
+    color: #666666;
+}

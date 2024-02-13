@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* body 전체 틀 */
+		#div_content_outer {
+			background: url("https://recipe1.ezmember.co.kr/img/container_bg.gif") left top repeat-y;
+			position: relative;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#div_content_outer > #div_content_left {
+			min-height: 462px;
+			border-top: 1px solid #e6e7e8;
+			width: 895px;
+			padding: 0 0 20px 0;
+		}
+		#div_content_outer > #div_content_right {
+			border-top: 1px solid #e6e7e8;
+			width: 335px;
+			margin-left: 10px;
+			padding: 0 0 30px 0;
+			height: auto;
+		}

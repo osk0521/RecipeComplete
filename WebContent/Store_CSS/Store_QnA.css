@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* 여기에 작성 */
+		.main_cont_wrap{
+			min-height: 560px;
+			position: relative;
+		}
+		#div_store_location_wrap {
+			width: 100%;
+			border-bottom: 1px solid #ededed;
+		}
+		#div_store_location_content {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#div_store_location_content > span {
+			display: block;
+			padding: 12px 0 12px 0;
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a {
+			color: #777;
+			font-size: 11px;
+			font-style: normal;
+			font-weight: normal;
+		}
+		#div_store_location_content > span > a:hover {
+			text-decoration: underline;
+		}
+		#div_store_cs {
+			padding: 45px 0 0 0;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		#div_store_cs > #div_store_cs_panel {
+			width: 960px;
+			padding-left: 40px;
+			min-height: 500px;
+		}
+		#div_store_cs_panel > #div_store_cs_header {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+		}
+		#div_store_cs_panel > #div_store_cs_header > h2 {
+			font-weight: 500;
+		}
+		#div_store_cs_panel > #div_store_cs_header > button {
+			display: inline-block;
+			padding: 0 10px;
+			font-size: 12px;
+			border: 1px solid #979797;
+			background: #979797;
+			text-align: center;
+			color: #fff;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		#div_store_cs_body > #div_store_cs_date_sort {
+			margin: 0 0 35px 0;
+			padding: 20px 20px 20px 30px;
+			border: 3px solid #eee;
+		} 
+		#div_store_cs_date_sort > form {
+			display: flex;
+		}
+		#div_store_cs_date_sort > form > span {
+			padding: 6px 15px 0 0;
+			color: #777;
+			font-size: 13px;
+		}
+		#div_store_cs_date_sort > form > #div_date_button {
+			display: flex;
+		}
+		#div_store_cs_date_sort > form > #div_date_button > button {
+			display: inline-block;
+			width: 54px;
+			height: 31px;
+			color: #777;
+			font-size: 12px;
+			border: 1px solid #d6d6d6;
+			border-right: 0;
+			background: #fff;
+		}
+		#div_store_cs_date_sort > form > #div_date_button > button:last-child {
+			border-right: 1px solid #d6d6d6;
+		}
+		#div_store_cs_date_sort > form > #div_date_button > button:hover {
+			background: #bbb;
+			color: #fff;
+		}
+		#div_store_cs_date_sort > form > #div_calendar {
+			margin: 0 10px;
+		}
+		#div_store_cs_date_sort > form > #div_calendar > input {
+		    padding: 0 10px;
+		    outline: none;
+		    font-size: 12px;
+		    width: 168px;
+		    height: 33px;
+		    border: 1px solid #d6d6d6;
+		    border-radius: 4px;
+		}
+		#div_store_cs_date_sort > form > #div_sort_button > button {
+			position: relative;
+			padding-right: 13px;
+			display: inline-block;
+			min-width: 100px;
+			height: 31px;
+			color: #fff;
+			font-weight: 500;
+			border: 1px solid #46ae4f;
+			background: #46ae4f;
+			text-align: center;
+			font-size: 12px;
+			cursor: pointer;
+		}
+		#div_store_cs_date_sort > form > #div_sort_button > button > img {
+			position: absolute;
+			top: 9px;
+			right: 27px;
+			z-index: 100;
+			width: 13px;
+			height: 13px;
+		}
+		#div_store_cs_content > #table_board_list {
+			width: 100%;
+			border-top: 1px solid #999;
+		}
+		#table_board_list > thead > tr > td {
+			text-align: center;
+			padding: 10px 10px 10px 14px;
+			border-bottom: 1px solid #dbdbdb;
+			background: #fbfbfb;
+			font-size: 12px;
+			font-weight: 500;
+			color: #333;
+		}
+		#table_board_list > tbody > tr {
+			height: 50px;
+		} 
+		#table_board_list > tbody > tr > td {
+			text-align: center;
+			padding: 10px 10px 15px 10px;
+			border-bottom: 1px solid #dbdbdb;
+			font-size: 12px;
+			color: #333;
+		}
+		#table_board_list > tbody > tr > td.cs_board_title {
+			text-align: left;
+			vertical-align: middle;
+			padding: 13px 10px 15px 10px;
+		}
+		#div_cs_store_page_panel > #div_cs_store_page_bundle {
+			display: flex;
+			justify-content: center;
+			margin: 30px 0;
+		}
+		#div_cs_store_page_bundle > .div_cs_store_page_button > a {
+			display: inline-block;
+			padding: 9px 15px;
+			margin: 0 3px;
+			text-decoration: none;
+			border: 1px solid #ebebeb;
+		}
+		#div_cs_store_page_bundle > .div_cs_store_page_button > a.button_active {
+			color: #ff5e5e;
+			cursor: default;
+			font-weight: 600;
+		}
+		.cs_board_title > a > img{
+			margin: 0 2px;
+			vertical-align: middle;
+		}

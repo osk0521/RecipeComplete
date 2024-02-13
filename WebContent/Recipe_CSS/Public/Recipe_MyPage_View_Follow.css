@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* 마이페이지 팔로워 팔로잉 보여주는 창 */
+		.div_mypage_extra {
+			display: none;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1040;
+			outline: 0;
+			padding-right: 17px;
+		}
+		#div_view_following_area {
+			transform: translate(0, 0);
+			width: 370px;
+			margin: 30px auto;
+		}
+		#div_view_follower_area {
+			transform: translate(0, 0);
+			width: 370px;
+			margin: 30px auto;
+		}
+		.div_mypage_extra_box {
+			box-shadow: 0 5px 5px rgba(0, 0, 0, .1);
+			position: relative;
+			background-color: #fff;
+			background-clip: padding-box;
+			border: 1px solid rgba(0, 0, 0, .2);
+			border-radius: 10px;
+			outline: 0;
+			z-index: 1050;
+		}
+		.div_mypage_extra_box_title {
+			min-height: 16.43px;
+			padding: 15px 17px 14px;
+			border-bottom: 1px solid #b4b4b4;
+			background: #efefef;
+			border-radius: 10px 10px 0 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		.h4_box_header_title {
+			margin: 0;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: 1.42857143;
+		}
+		.button_box_close {
+			opacity: 1;
+			cursor: pointer;
+			border: 0;
+			background: 0 0;
+		}
+		#div_view_following_body {
+			padding: 0;
+		}
+		#div_view_follower_body {
+			padding: 0;
+		}
+		.ul_follow_list {
+			height: 420px;
+			overflow-x: hidden;
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 10;
+		}
+		.li_follow_user {
+			padding: 16px 20px 14px 17px;
+			border-bottom: 1px solid #d5d6d7;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.li_follow_user > a {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.li_follow_user > a:hover {
+			color: #333;
+		}
+		.li_follow_user > a > img {
+			width: 60px;
+			height: 60px;
+			margin-right: 15px;
+			border-radius: 50%;
+		}
+		.btn_follow_user {
+			color: #fff;
+			background: #46ae4f;
+			border: 1px solid #497725;
+			display: inline-block;
+			padding: 6px 20px;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			cursor: pointer;
+			border-radius: 3px;
+		}

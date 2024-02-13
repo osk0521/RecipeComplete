@@ -1,0 +1,701 @@
+@charset "UTF-8";
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		body {
+			min-width: 1240px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #333;
+			background: #f1f1f2;
+		}
+		a {
+			color: #333;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		a:focus {
+			text-decoration: none;
+			color: inherit;
+		}
+		img {
+			vertical-align: middle;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		li {
+			list-style: none;
+		}
+		.border {
+			border: 1px solid red;
+		}
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		#div_header {
+			position: relative;
+			background: #fff;
+			width: 100%;
+			height: 112px;
+		}
+		#div_header > div:nth-child(1) {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 16px 0 0 176px;
+		}
+		#div_header > div:nth-child(1) > div {
+			display: inline-block;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(1) {
+			margin: 0 30px 0 0;
+			vertical-align: top;
+		}
+		#div_header > div:nth-child(1) > div:nth-child(2) {
+			width: 450px;
+			padding-top: 12px;			
+		}
+		#div_header > div:nth-child(2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1000px;
+		}
+		#div_header > div:nth-child(3) {
+			position: absolute;
+			top: 0;
+			left: 110px;
+			z-index: 1000px;
+		}
+		.glyphicon {
+			position: relative;
+			top: 1px;
+			display: inline-block;
+		    font-family: 'Glyphicons Halflings';
+		    font-style: normal;
+		    font-weight: 400;
+		    line-height: 1;
+		}
+		#div_input_group {
+			position: relative;
+			display: table;
+			border-collaspe: separate;
+		}
+		#div_input_group > input {
+			border: 1px solid #ccc;
+			background: #fbfbfb;
+			height: 38px;
+			display: table-cell;
+			position: relative;
+			z-index: 2;
+			float: left;
+			width: 100%;
+			padding: 6px 12px;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #555;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#div_input_group span {
+			position: relative;
+			white-space: nowrap;
+			width: 1%;
+			color: #fff;
+			font-size: 22px;
+			vertical-align: middle;
+			display: table-cell;
+		}
+		#div_input_group > span > button {
+			border-radius: 4px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			background: #74b243;
+			border: 1px solid #68a13a;
+			height: 38px;
+			margin: 0 0 2px -2px;
+			position: relative;
+			cursor: pointer;
+			margin-left: -1px;
+			padding: 6px 20px;
+			display: inline-block;
+		}
+		.glyphicon-search:before {
+			content: "\e003";
+		}
+		#div_header_button {
+			display: inline-block;
+			padding: 16px 0 0 50px;
+			vertical-align: top;
+			position: relative;
+			margin: 0 0 10px;
+		}
+		#div_header_button > div {
+			padding: 0 3px;
+		}
+		#div_header_button > div:nth-child(1) > a > img {
+			display: inline-block;
+			width: 44px;
+		}
+		#div_header_button > div:nth-child(3) {
+			margin-left: 50px;
+		}
+		#div_menubar {
+			background: url("https://recipe1.ezmember.co.kr/img/gnb_bg.gif") left top repeat-x;
+			height: 46px;
+			width: 100%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			margin-bottom: 16px;
+		}
+		#div_menu_content {
+			width: 1240px;
+			margin: 0 auto;
+			padding: 9px 30px 0;
+			text-align: center;
+		}
+		.div_menu_button {
+			float: left;
+			padding: 0;
+			width: 235px;
+			height: 25px;
+		}
+		.div_menu_button a {
+			display: block;
+			font-size: 18px;
+			font-weight: 600px;
+			margin: 0 8px;
+			color: #fff;
+			text-decoration: none;
+		}
+		.div_menu_button a:hover {
+			color: #ffff00;
+		}
+		.div_menu_button a span.glyphicon {
+			font-size: 14px;
+			margin: -2px 0 0 0px;
+		}
+		.glyphicon-menu-down::before {
+			content: "\e259";
+		}
+/*---------- header ----------*/
+		#div_content_outer {
+			background: url("https://recipe1.ezmember.co.kr/img/container_bg.gif") left top repeat-y;
+			position: relative;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#div_content_outer > div:nth-child(1) {
+			min-height: 462px;
+			border-top: 1px solid #e6e7e8;
+			width: 895px;
+			padding: 0 0 20px 0;
+		}
+		#div_content_outer > div:nth-child(2) {
+			border-top: 1px solid #e6e7e8;
+			width: 335px;
+			margin-left: 10px;
+			padding: 0 0 30px 0;
+			height: auto;
+		}
+		#div_mypage_header {
+			display: flex;
+			padding: 21px 21px 0;
+		}
+		#div_mypage_header > .div_mypage_header_button {
+			background: #e6e7e8;
+			border-right: 1px solid #fff;
+			color: #666;
+			font-weight: 400;
+			width: 33%;
+		}
+		#div_mypage_header > .div_mypage_header_button > a {
+			display: block;
+			padding: 15px 0;
+			font-size: 16px;
+			text-align: center;
+		}
+		#div_mypage_header > .div_mypage_header_button > a:not(.button-active):hover {
+			text-decoration: none;
+			color: #333;
+			background: #f5f5f5;
+		}
+		#div_mypage_header > .div_mypage_header_button > .button-active {
+			border-color: #fff;
+			cursor: default;
+			background-color: #6a6f74;
+			color: #fff;
+		}
+		#div_mypage_header > .div_mypage_header_button > a > span {
+			margin: 1px 6px 0 0;
+		}
+/* 여기에 작성 */
+		#div_mypage_comment_panel {
+			padding: 30px 21px 30px;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_sort {
+			display: flex;
+			justify-content: space-between;
+			font-size: 17px;
+			border-bottom: 1px solid #ccc;
+		} 
+		#div_mypage_comment_panel > #div_mypage_comment_sort > #div_mypage_comment_sort1 {
+			display: flex;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_sort > #div_mypage_comment_sort1 > div {
+			background: #fff;
+			color: #666;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_sort > #div_mypage_comment_sort1 > div > a {
+			display: block;
+			padding: 14px 38px;
+			margin-bottom: -1px;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_sort > #div_mypage_comment_sort1 > div > a:hover {
+			color: #515151;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_sort > #div_mypage_comment_sort1 > div > a.open_active {
+			cursor: default;
+			border: 1px solid #ccc;
+			border-bottom: 1px solid #fff;
+			font-weight: 600;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_body {
+			text-align: center;
+			margin: 22px 10px;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_body > #div_mypage_comment_none {
+			padding: 40px 0;
+			color: #999;
+			font-size: 16px;
+			line-height: 26px;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_body > #div_mypage_comment_none > img {
+			width: 180px;
+			height: 180px;
+		}
+		#div_mypage_comment_panel > #div_mypage_comment_body > #div_mypage_comment_none > p {
+			margin: 0;
+			padding: 25px 0 20px;
+			font-size: 24px;
+			color: #333;
+			line-height: 150%;
+		}
+		#div_profile_panel {
+			margin-bottom: 20px;
+		}
+		#div_profile_panel > #div_profile_background {
+			background: url(https://recipe1.ezmember.co.kr/img/mobile/my_pic_d3.jpg) left top no-repeat;
+			background-size: cover;
+			height: 150px;
+		}
+		#div_profile_panel > #div_profile_body {
+			text-align: center;
+			margin-top: -70px;
+			padding-bottom: 5px;
+		}
+		#div_profile_panel > #div_profile_body > #div_profile_img {
+			display: inline-block;
+			padding: 4px;
+			background: url("https://recipe1.ezmember.co.kr/img/mobile/shop_bg_name.png") left top;
+			border-radius: 50%;
+			position: relative;
+		}
+		#div_profile_body > #div_profile_img > #a_profile_img > img {
+			width: 110px;
+			height: 110px;
+			border-radius: 50%;
+		}
+		#div_profile_body > #div_profile_img > #a_change_profile_img {
+			position: absolute;
+			right: -2px;
+			top: -2px;
+		}
+		#div_profile_body > #div_profile_img > #a_change_profile_img > img {
+			width: 42px;
+			height: 42px;
+			border-radius: 50%;
+		}
+		#div_profile_body {
+			line-height: 1.5;
+		}
+		#div_profile_body > #div_profile_user_name {
+			margin-top: 5px;
+		}
+		#div_profile_body > #div_profile_user_name > b {
+			font-size: 18px;
+			display: block;
+			color: #000;
+			font-weight: 500;
+		}
+		#div_profile_body > #div_profile_user_introduce {
+			color: #777;
+			font-size: 12px;
+		}
+		#div_profile_body > #div_profile_user_introduce > span {
+			display: inline-block;
+			padding-right: -2px;
+		}
+		#div_profile_body > #div_profile_user_introduce > a {
+			color: #000;
+			text-decoration: none;
+		}
+		#div_profile_body > #div_profile_user_introduce > a:hover {
+			color: #000;
+			text-decoration: none;
+		}
+		#div_profile_body > #div_profile_figures {
+			margin-top: 10px;
+			color: #333;
+		}
+		#div_profile_body > #div_profile_figures > a:hover {
+			text-decoration: none;
+			color: #333;
+		}
+		#div_profile_body > #div_profile_figures > a > b {
+			font-weight: normal;
+		}
+		#div_profile_body > #div_profile_figures > span {
+			margin: 0 8px;
+			font-weight: bold;
+			color: #999;
+		}
+		.blank_space {
+			background: #f1f1f2;
+			height:10px;
+			border-top: 1px solid #e6e7e8;
+			border-bottom: 1px solid #e6e7e8;
+			clear: both;
+		}
+		.advertisement {
+			margin: 10px;
+		}
+		.advertisement a img {
+			 width: 100%;
+			 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		}
+		#div_store_best {
+			padding: 12px 14px 0;
+		}
+		#div_store_best > #div_store_title {
+			text-align: left;
+			padding: 12px 5px;
+			border-bottom: 1px solid #e6e6e6;
+		}
+		#div_store_best > #div_store_title > b {
+			font-size: 18px;
+			color: #000;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > b > span {
+			font-size: 18px;
+			color: #74b243;
+			letter-spacing: -0.05cm;
+			font-weight: 500;
+		}
+		#div_store_best > #div_store_title > a {
+			display: inline-block;
+			float: right;
+			font-size: 13px;
+			color: #999;
+			margin-top: 4px;
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product {
+			margin: 15px 0 0 0;
+		}
+		#div_store_best > #div_store_body > .div_product a {
+			text-decoration: none;
+		}
+		#div_store_best > #div_store_body > .div_product a .div_product_img {
+			width: 305px;
+			border: 1px solid #ddd;
+		}
+		#div_store_best > #div_store_body > .div_product .div_product_text {
+			padding: 8px 2px 2px;
+			margin-bottom: 18px;
+		}
+		.product_title {
+			font-size: 16px;
+			color: #000;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 1.4;
+			margin-bottom: 8px;
+			
+		}
+		.product_price {
+			font-size: 20px;
+			color: #000;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			line-height: 1;
+			margin-bottom: 0;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.product_price > small {
+			font-weight: normal;
+			color: #000;
+			fot-size: 16px;
+			margin-left: 1px;
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+		.product_star {
+			padding-top: 8px;
+		}
+		.product_star img {
+			width: 13px;
+			margin: -1px 1px 0 0
+		}
+		.product_star span {
+			color: #999;
+			font-size: 11px;
+			padding-left: 3px;
+			vertical-align: middle;
+			font-weight: 300;
+		}
+		#div_store_more {
+			border-top: 1px solid #e6e6e6;
+			margon-top: -10px;
+		}
+		#div_store_more > #store_more_button {
+			display: inline-block;
+			width: 100%;
+			padding: 10px 0;
+			text-align: center;
+			color: #999;
+			border: none;
+			background: #fff;
+			font-weight: normal;
+			font-size: 14px;
+			font-family: 'Noto Sans KR', sans-serif!important;
+		}
+/*---------- body ----------*/
+		#div_recent_recipe_panel {
+			width: 1240px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content {
+			margin-top: 44px;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content > h3 {
+			margin: 20px 0 10px 20px;
+			font-size: 24px;
+			font-weight: normal;
+			color: #000;
+		}
+		#div_recent_recipe_panel > #div_recent_recipe_content > #div_recent_recipe_body {
+			display: flex;
+			margin: 22px 40px 0 40px;
+			padding-left: 6px;
+			position: relative;
+		}
+		.rr_list_button_previous {
+			position: absolute;
+			left: 7px;
+			top: 70px;
+			z-index: 100;
+		}
+		.rr_list_button_next {
+			position: absolute;
+			right: 13px;
+			top: 70px;
+			z-index: 100;
+		}
+		#div_recent_recipe_body > .recent_recipe {
+			width: 16.66666667%;
+		}
+		#div_recent_recipe_body > .recent_recipe > .rr_recipe_thumbnail {
+			display: block;
+			width: 180px;
+			height: 255px;
+			border-radius: 0;
+			padding: 0;
+			background-color: #fff;
+			margin-bottom: 20px;
+			line-height: 1.42857143;
+			text-decoration: none;
+			border: 1px solid #ddd;
+		}
+		.rr_recipe_thumbnail_img{
+			display: block;
+			width: 180px;
+			height: 180px;
+			max-width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.rr_recipe_title {
+			padding: 9px;
+			color: #333;
+			font-size: 14px;
+		}
+		#footer1 {
+			display: flex;
+			background: #fff;
+			color: #999;
+			padding: 2px 0 5px 0;
+			margin-top: 30px;
+			border-top: 1px solid #dcdcdc;
+		}
+		#footer1_panel {
+			display: flex;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#footer1_panel > #footer1_content1 {
+			width: 440px;
+			padding:  26px 0 0 9px;
+		}
+		#footer1_content1 > .f_content1_link {
+			margin: 0;
+			padding-bottom: 16px;
+		}
+		#footer1_content1 > .f_content1_link a {
+			font-size: 13px;
+			color: #999;
+			text-decoration: none;
+			font-weight: 450;
+		}
+		#footer1_content1 > .f_content1_link span {
+			color: #ddd;
+			padding: 0 4px;
+		}
+		#footer1_content1 > .f_content1_info {
+			font-size: 13px;
+			line-height: 1.6;
+			margin-bottom: 16px;
+		}
+		#footer1_panel > #footer1_content2 {
+			width: 500px;
+			marging-right: 11px;
+			padding: 25px 0 0 0;
+		}
+		#footer1_content2 > #app_download {
+			display: block;
+			margin-bottom: 9px;
+		}
+		#footer1_content2 > #banner_sns {
+			display: flex;
+			padding-top: 20px;
+		}
+		#footer1_content2 > #banner_sns > a {
+			margin-bottom: 9px;
+		}
+		#footer1_panel > #footer1_content3 {
+			margin-right: 15px;
+			width: 300px;
+			padding: 28px 0 0 0;
+		}
+		#footer1_content3 > #f_customer_send {
+			width: 300px;
+			height: 150px;
+			font-size: 13px;
+			background: #f5f5f5;
+			border: 1px solid #e6e7e8;
+			display: block;
+			padding: 6px 12px;
+			line-height: 1.42857143;
+			color: #555;
+			border-radius: 4px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+		}
+		#footer1_content3 > #f_customer_send::placeholder {
+			color: #aaa;
+		}
+		#footer1_content3 > #f_send_cs_button {
+			display: inline-block;
+			border: 1px solid #dcdcdc;
+			background: #fff;
+			border-radius: 0;
+			color: #444;
+			width: 300px;
+			margin: 8px 0 0 -1px;
+			padding: 6px 20px;
+			font-size: 14px;
+			font-weight: 400;
+			cursor: pointer;
+			user-select: none;
+		}
+		#footer1_content3 > #f_cs_notice {
+			margin: 0;
+			padding: 10px 0 0 0;
+			text-align: center;
+			width: 300px;
+			font-size: 13px;
+			font-weight: 500;
+			color: #999;
+		}
+		#footer2 {
+			background: #289f5d;
+			margin-top: 0;
+			border-top: none;
+			padding: 2px 0 5px 0;
+		}
+		#footer2 > #footer2_panel {
+			display: flex;
+			padding: 18px 0 18px 40px;
+			width: 1240px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#footer2_panel > #f2_logo {
+			margin: auto 0;
+		}
+		#footer2_panel > #f2_all_count {
+			display: flex;
+			background: url("https://recipe1.ezmember.co.kr/img/btm_line.png") 32px 24px no-repeat;
+			vertical-align: middle;
+			padding-left: 7px;
+			margin: 0 0 10px 22px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box {
+			text-align: center;
+			color: #fff;
+			font-size: 12px;
+			width: 160px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > a {
+			color: #fff;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > a > span {
+			width: 100%;
+			height: 66px;
+			display: block;
+			margin-bottom: 6px;
+		}
+		#footer2_panel > #f2_all_count > .div_count_box > b {
+			color: #fbff51;
+			display: block;
+			font-size: 18px;
+			font-weight: normal;
+			margin-top: 4px;
+		}
+		#footer2_panel > #f2_send_mail {
+		    background: url("https://recipe1.ezmember.co.kr/img/btm_img1.png") left top no-repeat;
+		    padding: 12px 0 0 108px;
+		    margin: 10px;
+		}
+		#footer2 > #footer2_Since {
+			background: #fff;
+			text-align: center;
+			padding: 16px 0;
+			margin-bottom: -10px;
+		}
+/*---------- footer ----------*/
