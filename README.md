@@ -60,7 +60,7 @@
 </pre>
 ## 페이지별 기능
 공통: 레시피 썸네일 클릭시 해당 레시피 상세페이지로 이동합니다.
-
+시연 영상(https://www.canva.com/design/DAF82TK7_vA/ypTQf6kEBpeABW9iucfyOw/edit?utm_content=DAF82TK7_vA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ### 메인 페이지
   - 화살표 클릭 혹은 드레그시 slick을 이용하여 다른 상품들을 보여줍니다.
     ![메인페이지_화면이동
