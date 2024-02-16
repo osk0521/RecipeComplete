@@ -9,7 +9,7 @@
 자취생을 부탁해 사이트는
 자취생들이 가지고 있는 냉장고 재료를 기반으로
 다양한 요리를 보여주는 사이트입니다.
-
+자취생을 부탁해 API 명세서(https://nine-megaraptor-493.notion.site/9fa27de839484993af5b1f81e4a78bb4?v=477ade06ef864b4fa1aa027fadda2b41)
 
 ## 팀원 역할 분담
 ### 이진우
